@@ -22,5 +22,5 @@ MonoBehaviour:
   ThumbnailRects: []
   AutoTileRects: []
   AutotileIdxMap: 
-  AtlasMaterial: {fileID: 0}
-  m_atlasTexture: {fileID: 0}
+  AtlasMaterial: {fileID: 2100000, guid: 5848c345006e73e4ead55a92aedbb741, type: 2}
+  m_atlasTexture: {fileID: 2800000, guid: e7334039d48a33a4fa74bee4f3af8080, type: 3}
