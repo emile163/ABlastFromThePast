@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 37cfc1a7bed308d4e9b6afebf93bf9e3
+guid: f90589b9d074d2443aa735e37972e65e
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -11,6 +11,12 @@ TextureImporter:
   - first:
       213: 1346664125870693856
     second: ship_big_tileset_2
+  - first:
+      213: -4853017286436212712
+    second: ship_big_tileset_0
+  - first:
+      213: -1585818699663864660
+    second: ship_big_tileset_1
   - first:
       213: 9000566408210901542
     second: ship_big_tileset_3
@@ -1069,8 +1075,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b03896b9473831ce0800000000000000
-      internalID: -1435659319354227957
+      spriteID: 810b3298d7e96acb0800000000000000
+      internalID: -4853017286436212712
       vertices: []
       indices: 
       edges: []
@@ -1090,8 +1096,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03afa25672f10cfa0800000000000000
-      internalID: -5782587667482215888
+      spriteID: cac0d507b4a0ef9e0800000000000000
+      internalID: -1585818699663864660
       vertices: []
       indices: 
       edges: []
