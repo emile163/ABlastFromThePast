@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300098, guid: e8f7408de36fedc46a6d83c6ede811bd, type: 3}
+  m_Sprite: {fileID: 21300012, guid: e8f7408de36fedc46a6d83c6ede811bd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -138,7 +138,7 @@ MonoBehaviour:
   Camera2D: {fileID: 0}
   BulletAngDispersion: 15
   ShadowSprite: {fileID: 21200002}
-  WeaponSprite: {fileID: 21200004}
+  WeaponSprite: {fileID: 0}
   FogSightLength: 5
   Vehicle: {fileID: 0}
 --- !u!114 &11400004
@@ -246,7 +246,7 @@ MonoBehaviour:
   m_playMode: 2
   m_isPlaying: 1
   m_fps: 6
-  m_animIdx: 4
+  m_animIdx: 2
   m_stopFrameIdx: 0
   m_dirAnimCtrl: {fileID: 11400000, guid: 7dd7308210118014bbd4fb4b7c36e762, type: 2}
   m_dir: 0
