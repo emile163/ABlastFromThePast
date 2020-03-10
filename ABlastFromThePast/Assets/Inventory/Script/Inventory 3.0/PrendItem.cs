@@ -23,8 +23,11 @@ public class PrendItem : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player"))
+        Debug.Log("  = e");
+
+        if(other.gameObject.CompareTag("Player"))
         {
+            Debug.Log("  ");
             pickUpText.gameObject.SetActive(true);
             pickUpAllowed = true;
         }
@@ -33,7 +36,7 @@ public class PrendItem : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
             pickUpText.gameObject.SetActive(false);
             pickUpAllowed = false;

@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PickUpItem : MonoBehaviour
 {
+    [SerializeField] private Text pickUpText;
     [SerializeField] Item item;
     [SerializeField] Inventory inventory;
 
@@ -14,18 +16,20 @@ public class PickUpItem : MonoBehaviour
         if (isInRange && Input.GetKeyDown(KeyCode.E))
         {
             inventory.AddItem(item);
-            Debug.Log("HIIIIIIIIIIIIIIII");
+            Destroy(gameObject);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-            isInRange = true;
+        isInRange = true;
+        pickUpText.gameObject.SetActive(true);
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         isInRange = false;
+        pickUpText.gameObject.SetActive(false);
     }
 
 }
