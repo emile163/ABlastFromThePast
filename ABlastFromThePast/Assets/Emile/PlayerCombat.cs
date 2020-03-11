@@ -89,11 +89,7 @@ public class PlayerCombat : MonoBehaviour
                     attackPoint.position = pos.position;
 
                  
-                Debug.Log("Moving ="+moving);
-                Debug.Log("MovingRight =" + movingRight);
-                Debug.Log("MovingLeft =" + movingLeft);
-                Debug.Log("MovingUp =" + movingUp);
-                Debug.Log("MovingDown =" + movingDown);
+                
 
                 if (movingUp == true)
                 {
