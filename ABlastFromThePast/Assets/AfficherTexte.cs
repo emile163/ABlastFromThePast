@@ -10,23 +10,24 @@ public class AfficherTexte : MonoBehaviour
         
     }
  public GameObject Target;
-<<<<<<< Updated upstream
+//<<<<<<< Updated upstream
   public GameObject TextBox;
-    public Vector3 distancePNJ_P;   
-   
+    public Vector3 distancePNJ_P;
+
     // Update is called once per frame
     void Update()
     {
-        distancePNJ_P = Target.transform.position- this.transform.position;
-        if (distancePNJ_P.magnitude< 1)
+        distancePNJ_P = Target.transform.position - this.transform.position;
+        if (distancePNJ_P.magnitude < 1)
         {
-            (TextBox).SetActive(true) ;
+            (TextBox).SetActive(true);
         }
         else
         {
             (TextBox).SetActive(false);
         }
-=======
+    }
+
     public DialogueTrigger
         dialogueTrigger;
     private bool isInside = false;
@@ -53,7 +54,7 @@ public class AfficherTexte : MonoBehaviour
             
             }
       //  else isInside = false; 
->>>>>>> Stashed changes
+
     }
 
 
