@@ -257,7 +257,6 @@ GameObject:
   - component: {fileID: 779383873}
   - component: {fileID: 779383872}
   - component: {fileID: 779383871}
-  - component: {fileID: 779383870}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -265,18 +264,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &779383870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 779383869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01d7f54fe2f2ffe46a61c20c4d863972, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!58 &779383871
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -457,7 +444,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1134111284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -554,7 +541,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1839239620
 MonoBehaviour:
   m_ObjectHideFlags: 0
