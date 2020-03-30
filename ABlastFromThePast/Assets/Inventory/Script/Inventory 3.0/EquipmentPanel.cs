@@ -7,6 +7,10 @@ public class EquipmentPanel : MonoBehaviour
 {
     [SerializeField] Transform equipmentSlotsParent;
     [SerializeField] EquipmentSlot[] equipmentSlots;
+    private int AttaquePersonnage = 0;
+    private int DefencPersonnage = 0;
+    private Item Litem;
+    private EquipableItem EI;
 
     public event Action<Item> OnItemRightClickedEvent;
 
@@ -50,4 +54,42 @@ public class EquipmentPanel : MonoBehaviour
         }
         return false;
     }
+    
+    public int Nombreattaque()
+    {
+        AttaquePersonnage = 0;
+        for (int i = 0; i < equipmentSlots.Length; i++)
+        {
+            if(equipmentSlots[i] != null)
+            {
+                Litem = equipmentSlots[i]._item;
+                EI = (EquipableItem)Litem;
+                if (EI != null && EI.NomStat == NomStat.Attaque)
+                {
+                    AttaquePersonnage = AttaquePersonnage + EI.stat;
+                }
+            }
+        }
+        return AttaquePersonnage;
+    }
+
+    public int NombreDefence()
+    {
+        DefencPersonnage = 0;
+        for (int i = 0; i < equipmentSlots.Length; i++)
+        {
+            if (equipmentSlots[i] != null)
+            {
+                Litem = equipmentSlots[i]._item;
+                EI = (EquipableItem)Litem;
+                if (EI != null && EI.NomStat == NomStat.Defence)
+                {
+                    DefencPersonnage = DefencPersonnage + EI.stat;
+                }
+
+            }
+        }
+        return DefencPersonnage;
+    }
+    
 }

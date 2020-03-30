@@ -5,15 +5,22 @@ using UnityEngine.UI;
 
 public class PickUpItem : MonoBehaviour
 {
+    [SerializeField] private Text FullInventoryText;
     [SerializeField] private Text pickUpText;
     [SerializeField] Item item;
     [SerializeField] Inventory inventory;
+     
 
     private bool isInRange;
 
     private void Update()
     {
-        if (isInRange && Input.GetKeyDown(KeyCode.E))
+        if(isInRange && Input.GetKeyDown(KeyCode.E) && item is RessourceItem)
+        {
+            inventory.AddRessourceItem(item);
+            Destroy(gameObject);
+        }
+        else if (isInRange && Input.GetKeyDown(KeyCode.E) && inventory.IsFull() == false)
         {
             inventory.AddItem(item);
             Destroy(gameObject);
@@ -23,13 +30,22 @@ public class PickUpItem : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         isInRange = true;
-        pickUpText.gameObject.SetActive(true);
+        if (inventory.IsFull() == false)
+        {
+            pickUpText.gameObject.SetActive(true);
+
+        } else {
+            FullInventoryText.gameObject.SetActive(true);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         isInRange = false;
         pickUpText.gameObject.SetActive(false);
+        FullInventoryText.gameObject.SetActive(false);
+        
     }
 
+    
 }

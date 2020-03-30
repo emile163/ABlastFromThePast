@@ -11,16 +11,25 @@ public class ItemTooltip : MonoBehaviour
     [SerializeField] Text ChiffreStat;
     [SerializeField] Text typeDitem;
 
-    public void ShowTooltip(EquipableItem item)
+    public void ShowTooltipEquipableItem(EquipableItem item)
     {
         nomItem.text = item.itemName;
         Description.text = item.itemDes;
-        nomStat.text = item.nomStat;
+        nomStat.text = item.NomStat.ToString();
         ChiffreStat.text = item.stat.ToString();
         typeDitem.text = item.EquipmentType.ToString();
         gameObject.SetActive(true);
     }
 
+    public void ShowTooltipItem(Item item)
+    {
+        nomItem.text = item.itemName;
+        Description.text = item.itemDes;
+        nomStat.text = null;
+        ChiffreStat.text = null;
+        typeDitem.text = null;
+        gameObject.SetActive(true);
+    }
     public void HideToolTip()
     {
         gameObject.SetActive(false);

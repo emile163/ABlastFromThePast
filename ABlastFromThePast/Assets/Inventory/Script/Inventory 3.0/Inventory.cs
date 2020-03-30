@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
@@ -8,6 +8,7 @@ public class Inventory : MonoBehaviour
     [SerializeField] List<Item> items;
     [SerializeField] Transform itemsParent;
     [SerializeField] ItemSlot[] itemSlots;
+    private bool PeuStack = false;
 
     public event Action<Item> OnItemRightClickedEvent;
 
@@ -21,7 +22,7 @@ public class Inventory : MonoBehaviour
 
     private void OnValidate()
     {
-        if(itemsParent != null)
+        if (itemsParent != null)
         {
             itemSlots = itemsParent.GetComponentsInChildren<ItemSlot>();
         }
@@ -43,14 +44,16 @@ public class Inventory : MonoBehaviour
 
     }
 
-    public bool AddItem (Item item)
+    public bool AddItem(Item item)
     {
-        if (IsFull())
-            return false;
+        
+            if (IsFull())
+                return false;
 
-        items.Add(item);
-        RefreshUI();
-        return true;
+            items.Add(item);
+            RefreshUI();
+            return true;
+        
     }
 
     public bool RemoveItem(Item item)
@@ -58,6 +61,7 @@ public class Inventory : MonoBehaviour
         if (items.Remove(item))
         {
             RefreshUI();
+            PeuStack = false;
             return true;
         }
         return false;
@@ -66,5 +70,24 @@ public class Inventory : MonoBehaviour
     public bool IsFull()
     {
         return items.Count >= itemSlots.Length;
+    }
+
+    public void AddRessourceItem(Item item)
+    {
+       
+            for (int i = 0; i < items.Count; i++)
+            {
+                if(items[i].itemName == item.itemName && item is RessourceItem)
+                {
+                itemSlots[i].nombreDeRessource++;
+                PeuStack = true;
+                }
+            }
+        
+            if(PeuStack == false)
+        {
+            AddItem(item);
+        }
+        
     }
 }

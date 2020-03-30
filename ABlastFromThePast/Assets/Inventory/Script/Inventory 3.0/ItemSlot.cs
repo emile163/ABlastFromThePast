@@ -7,13 +7,44 @@ using System;
 
 public class ItemSlot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
-    private Item _item;
+    public Item _item;
 
     [SerializeField] Image image;
     [SerializeField] ItemTooltip tooltip;
-
+    [SerializeField] Inventory inventory;
+    [SerializeField] Text NombreDeRessource;
+    [SerializeField] GameObject contenant;
+    public int nombreDeRessource=1;
+    public GameObject button; 
     public event Action<Item> OnRightClickEvent;
+    public Button RemoveButton;
 
+    void Start()
+    {
+        button.SetActive(false);
+        nombreDeRessource = 1;
+    }
+
+    void Update()
+    {
+        if (_item!=null && _item is EquipableItem || _item is RessourceItem || _item is EatableItem)
+        {
+            button.SetActive(true);
+        } else if(_item == null)
+        {
+            button.SetActive(false);
+        }
+        
+        if ( _item != null && nombreDeRessource > 1)
+        {
+            NombreDeRessource.text = nombreDeRessource.ToString();
+            contenant.SetActive(true);
+        }
+        else
+        {
+            contenant.SetActive(false);
+        }
+    }
     public Item Item
     {
         get { return _item; }
@@ -29,6 +60,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandle
             {
                 image.sprite = _item.itemSprite;
                 image.enabled = true;
+                RemoveButton.interactable = true;
             }
         }
     }
@@ -57,7 +89,10 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandle
     {
         if(Item is EquipableItem)
         {
-            tooltip.ShowTooltip((EquipableItem)Item);
+            tooltip.ShowTooltipEquipableItem((EquipableItem)Item);
+        } else if(Item is Item)
+        {
+            tooltip.ShowTooltipItem(Item);
         }
     }
 
@@ -66,4 +101,17 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandle
          tooltip.HideToolTip();
     }
 
+    public virtual void DeleteItem()
+    {
+        if (nombreDeRessource <= 1)
+        {
+            button.SetActive(false);
+            RemoveButton.interactable = false;
+            inventory.RemoveItem(_item);
+        }
+        else
+        {
+            nombreDeRessource--;
+        }
+    }
 }

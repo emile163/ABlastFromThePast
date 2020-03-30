@@ -11,11 +11,17 @@ public enum EquipmentType
     Arme,
     autre,
 }
+public enum NomStat
+{
+    Attaque,
+    Defence,
+    Autre,
+}
 
 [CreateAssetMenu]
 public class EquipableItem : Item
 {
-    public string nomStat;
+    public NomStat NomStat;
     public int stat;
     public EquipmentType EquipmentType;
 }
