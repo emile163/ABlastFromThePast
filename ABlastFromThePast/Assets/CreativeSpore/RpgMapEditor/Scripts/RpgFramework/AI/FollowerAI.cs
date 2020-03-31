@@ -13,7 +13,7 @@ namespace CreativeSpore.RpgMapEditor
     [AddComponentMenu("RpgMapEditor/AI/FollowerAI", 10)]
 	public class FollowerAI : MonoBehaviour {
 
-		GameObject m_player;
+		 GameObject m_player;
 		MovingBehaviour m_moving;
 		PhysicCharBehaviour m_phyChar;
         MapPathFindingBehaviour m_pathFindingBehaviour;
