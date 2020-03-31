@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f610edca08287b4fbbd8ebab1a2caa4, type: 3}
+  m_Name: Debug map
+  m_EditorClassIdentifier: 
+  Data:
+    Metadata:
+      version: 1.2.4
+      compressedTileData: 1
+    TileMapWidth: 200
+    TileMapHeight: 200
+    TileData:
+    - Tiles: 71c7fffffffffffff6ffffff000000007ffeffffffffffff00000000ffffffff07000000ffffffff07000000ffffffff07000000fffffffff1ffffff020000004fffffffffffffff00000000f9fffffffffffffffeffffff1d000000fbffffff02000000fafffffffffffffffeffffff020000004fffffffffffffff00000000fcffffffffffffff12000000fffffffffdffffff12000000fcfffffffffffffff9ffffff0200000048ffffffffffffff12000000fffffffffeffffff120000003cfffffffffffffffdffffff120000003bffffffffffffff12000000c8a1ffffffffffff
+      Visible: 1
+      Name: Ground
+      LayerType: 0
+      SortingLayer: Default
+      SortingOrder: 0
+      Depth: 1
+    - Tiles: dec5fffffffffffff9ffffff140000003cfffffffffffffffcffffff1400000045ffffffffffffff01000000fffffffff6ffffff1400000044fffffffffffffffaffffff140000003aa0ffffffffffff
+      Visible: 1
+      Name: Ground Overlay
+      LayerType: 0
+      SortingLayer: Default
+      SortingOrder: 0
+      Depth: 0.5
+    - Tiles: c063ffffffffffff
+      Visible: 1
+      Name: Overlay
+      LayerType: 1
+      SortingLayer: Default
+      SortingOrder: 0
+      Depth: -1

@@ -7,8 +7,12 @@ namespace CreativeSpore.RpgMapEditor
     [RequireComponent(typeof(PhysicCharBehaviour))]
     [RequireComponent(typeof(DirectionalAnimation))]
     [RequireComponent(typeof(IsoSpriteController))]
+
     public class CompanionAI : MonoBehaviour
     {
+
+        public bool canmove; // add par phil
+
         [Tooltip("Maximum waiting time between steps")]
         public float MaxStepDelay = 2f;
         [Tooltip("Minimum waiting time between steps")]
