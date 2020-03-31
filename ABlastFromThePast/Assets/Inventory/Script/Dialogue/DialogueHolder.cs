@@ -22,15 +22,14 @@ public class DialogueHolder : MonoBehaviour
     {
 
     }
-    void OnTriggerStay(Collider other)
+    void OnTriggerStay2D(Collider2D other)
     {
         {
-            if (other.gameObject.name == "Player")
+          
             {
                 isInside = true;
 
             }
-            else isInside = false;
             if (Input.GetKeyDown(KeyCode.E))
             {
                 SpaceUp = false;
