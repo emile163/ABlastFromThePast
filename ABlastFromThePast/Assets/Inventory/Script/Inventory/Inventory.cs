@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class Inventory2 : MonoBehaviour
+public class Inventory : MonoBehaviour
 {
     [SerializeField] List<Item> items;
     [SerializeField] Transform itemsParent;
