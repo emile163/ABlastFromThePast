@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: feuille
-  m_EditorClassIdentifier: Assembly-CSharp::RessourceItem
-  itemName: feuille
-  itemDes: feuille
-  itemSprite: {fileID: 8335116685959682778, guid: 04654a9413b420e4681fcb3acaba09b9,
-    type: 3}
-  nombreDeRessource: 1
+  m_Script: {fileID: 11500000, guid: 8ceb81e7f28a3f94d8412574acb0b83c, type: 3}
+  m_Name: miamia
+  m_EditorClassIdentifier: 
+  itemName: 
+  itemDes: 
+  itemSprite: {fileID: 0}
+  healingDone: 0

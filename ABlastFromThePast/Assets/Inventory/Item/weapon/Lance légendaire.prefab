@@ -81,7 +81,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &7133806788193388885
@@ -96,6 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FullInventoryText: {fileID: 0}
   pickUpText: {fileID: 0}
   item: {fileID: 11400000, guid: 9f08b7b61b5362243b85c83c5900361c, type: 2}
   inventory: {fileID: 0}
