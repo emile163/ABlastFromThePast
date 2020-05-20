@@ -39,9 +39,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: objects
-    uniqueID: 906105453
+  - name: effects
+    uniqueID: 1397734613
+    locked: 0
+  - name: enemy
+    uniqueID: 1175424095
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: objects
+    uniqueID: 906105453
+    locked: 0
+  - name: Player
+    uniqueID: 1102780989
     locked: 0

@@ -10,12 +10,15 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] EquipmentPanel equipmentPanel;
     [SerializeField] Text AttackDisplay;
     [SerializeField] Text DeffenceDisplay;
-    public int Healing;
+    private int Healing;
     private int AttaquePersonnage;
     private int DefencPersonnage;
     private EatableItem EI;
+    public PlayerSmg player;
+
     private void Awake()
     {
+        player.GetComponent<PlayerSmg>();
         inventory.OnItemRightClickedEvent += EquipFromInventory;
         equipmentPanel.OnItemRightClickedEvent += UnequipFromEquipmentPanel;
     }
@@ -26,7 +29,7 @@ public class InventoryManager : MonoBehaviour
         {
             EI = (EatableItem)item;
             Healing = EI.healingDone;
-            Debug.Log("Healing: " + Healing);
+            player.Heal(Healing);
             inventory.RemoveItem(item);
         }
         if(item is EquipableItem)

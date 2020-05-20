@@ -7,9 +7,9 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     public int maxHealth = 100;
     int currentHealth;
-    public GameObject host;
-    public GameObject FXDeathPrefab;
     public GameObject RandomDrop;
+    public GameObject bloodanim;
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -17,28 +17,22 @@ public class Enemy : MonoBehaviour
     }
     public void TakeDamage(int damage)
     {
-        if (FXDeathPrefab)
-        {
-            GameObject fxDeath = Instantiate(FXDeathPrefab, transform.position, FXDeathPrefab.transform.rotation) as GameObject;
-            Destroy(fxDeath, 3f);
-        }
-
         currentHealth -= damage;
+        Instantiate(bloodanim, transform.position, transform.rotation);
 
         if (currentHealth <= 0) {
             Die();
         }
+        Debug.Log(currentHealth);
     
     }
     void Die()
     {
-        Destroy(host);
-        this.enabled = false;
-        GetComponent<Collider2D>().enabled = false;
-
+        Destroy(gameObject);
         if (RandomDrop)
         {
             Instantiate(RandomDrop, transform.position, transform.rotation);
         }
     }
+
 }

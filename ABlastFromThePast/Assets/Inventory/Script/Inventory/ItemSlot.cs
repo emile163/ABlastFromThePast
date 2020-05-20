@@ -37,6 +37,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandle
         
         if ( _item != null && nombreDeRessource > 1)
         {
+            Debug.Log(nombreDeRessource);
             NombreDeRessource.text = nombreDeRessource.ToString();
             contenant.SetActive(true);
         }
