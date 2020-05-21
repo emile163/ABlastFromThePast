@@ -50,7 +50,7 @@ public class PlayerSmg : MonoBehaviour
             currentArmure = 0;
 		}
 
-        if(currentHealth < 0)
+        if(currentHealth <= 0)
 		{
             GameOverPanel.SetActive(true);
             Destroy(gameObject);
