@@ -13,8 +13,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Player
+  - Bateau
   - 
   - 
   - 
@@ -38,6 +38,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: bateau
+    uniqueID: 1163481791
+    locked: 0
   - name: objects
     uniqueID: 906105453
     locked: 0
