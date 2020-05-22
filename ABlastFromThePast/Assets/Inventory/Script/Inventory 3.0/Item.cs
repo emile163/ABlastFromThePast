@@ -8,5 +8,6 @@ public class Item : ScriptableObject
     public string itemName;
     public string itemDes;
     public Sprite itemSprite;
+    public itemType iT;////////////////mods ici
 
 }

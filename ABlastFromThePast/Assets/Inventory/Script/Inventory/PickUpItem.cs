@@ -10,6 +10,7 @@ public class PickUpItem : MonoBehaviour
     private bool pickUpAllowed;
     public GameObject pickupEffect;
     public Item itemData;
+    public QuestGoal qG;
 
     //initialiser le text de pick up invisible
     private void Start()
@@ -21,7 +22,12 @@ public class PickUpItem : MonoBehaviour
     {
         if(pickUpAllowed && Input.GetKeyDown(KeyCode.E))
         {
-            PickUp();
+            PickUp();///////////////// mods ici
+            if (qG.goalType== GoalType.Gathering)
+            if (itemData.iT == qG.it)
+            {
+                qG.currentAmount++;
+            }
         }
     }
 

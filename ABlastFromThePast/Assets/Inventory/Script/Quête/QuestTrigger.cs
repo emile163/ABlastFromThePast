@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class QuestTrigger : MonoBehaviour
 {
+    public GameObject Player;
+
     private QuestManager QM;
     public int questNumber;
 
@@ -20,23 +22,31 @@ public class QuestTrigger : MonoBehaviour
     {
         
     }
-    void OnTriggerEnter(Collider other)
+   public void triggerQuest()
     {
-        if (other.gameObject.name == "Player")
-        {
+       
+        
             if ( !QM.questCompleted[questNumber])
             {
-                if (startQuest && !QM.quests[questNumber].gameObject.activeSelf){
-                    QM.quests[questNumber].gameObject.SetActive(true);
+            
+
+
+                if (!QM.quests[questNumber].active){
+                    QM.setActive(questNumber);
                     QM.quests[questNumber].StartQuest();
                 }
             }
-            if (endQuest && QM.quests[questNumber].gameObject.activeSelf)
+            if (QM.quests[questNumber].currentAmount>= QM.quests[questNumber].goalAmount && QM.quests[questNumber].active)
             {
-                QM.quests[questNumber].gameObject.SetActive(false);
+                QM.setActive(questNumber);
                 QM.quests[questNumber].EndQuest();
                 QM.questCompleted[questNumber] = true;
-            }
+            } else if (QM.quests[questNumber].objExplo.gameObject == Player.transform)
+        {
+            QM.setActive(questNumber);
+            QM.quests[questNumber].EndQuest();
+            QM.questCompleted[questNumber] = true;
+        }
         }
 
 
@@ -44,4 +54,4 @@ public class QuestTrigger : MonoBehaviour
 
 
 
-}
+

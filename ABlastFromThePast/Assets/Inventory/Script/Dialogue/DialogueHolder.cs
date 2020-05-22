@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DialogueHolder : MonoBehaviour
 {
+    public bool given1timeQuest;
+    public bool hasQuest;
     public bool isInside;
     public bool SpaceUp;
     public string Name;
@@ -44,10 +46,13 @@ public class DialogueHolder : MonoBehaviour
                 // dMan.ShowBox(dialogue);
                 if (!dMan.dialogueActive)
                 {
+                    
+    dMan.hasQuest = hasQuest;
                     dMan.Name = Name;
                     dMan.dialogueLines = dialogueLines;
                     dMan.currentLine = 0;
                     dMan.ShowDialogue();
+                    dMan.given1timeQuest= given1timeQuest;
                 }
                 // Il faut ensuite ici rendre le pnj incapable de bouger tout comme le joueur
               

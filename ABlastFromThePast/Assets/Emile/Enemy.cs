@@ -10,6 +10,10 @@ public class Enemy : MonoBehaviour
     public GameObject host;
     public GameObject FXDeathPrefab;
     public GameObject RandomDrop;
+    /// <summary>
+    /// /////////////////// public MonsterType mT;
+    /// /////////////////// public QueteGoal qG;
+    /// </summary>
     void Start()
     {
         currentHealth = maxHealth;
@@ -35,6 +39,13 @@ public class Enemy : MonoBehaviour
         Destroy(host);
         this.enabled = false;
         GetComponent<Collider2D>().enabled = false;
+
+
+        ///////////////////////////////////// if (qg.goalType==GoalType.Kill){
+        ///if (qg.mT== mT){
+        ///qG.currentAmount++;
+        ///}}
+
 
         if (RandomDrop)
         {

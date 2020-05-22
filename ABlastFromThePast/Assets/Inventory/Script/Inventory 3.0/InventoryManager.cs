@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class InventoryManager : MonoBehaviour, IPointerClickHandler
 {
-    [SerializeField] Inventory inventory;
+    [SerializeField] Inventory3 inventory;
     [SerializeField] EquipmentPanel equipmentPanel;
 
     private void Awake()
