@@ -9,6 +9,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD:ABlastFromThePast/Assets/Inventory/Item Data/weapon/Hache de combat.asset
+  m_Script: {fileID: 11500000, guid: 1852838ef3f7ad14db90172e635458ca, type: 3}
+  m_Name: Hache de combat
+  m_EditorClassIdentifier: 
+  itemName: Hache de combat
+  itemDes: 
+  itemSprite: {fileID: 5050381174503268470, guid: 04654a9413b420e4681fcb3acaba09b9,
+    type: 3}
+  nomStat: Attaque
+  stat: 55
+  EquipmentType: 4
+=======
   m_Script: {fileID: 11500000, guid: f006c41ae37365e4c93b810de5acb8a7, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
@@ -19,3 +31,4 @@ MonoBehaviour:
   PointDAttaque: 150
   PointDeDefence: 250
   EquipmentType: 2
+>>>>>>> master:ABlastFromThePast/Assets/Inventory/Item Data/Sword.asset

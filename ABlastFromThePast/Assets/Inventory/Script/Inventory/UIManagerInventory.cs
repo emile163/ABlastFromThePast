@@ -6,19 +6,26 @@ public class UIManagerInventory : MonoBehaviour
 {
     public GameObject inventoryMenu;
 
+    private int timer = 1;
+
     private void Start()
     {
-        inventoryMenu.gameObject.SetActive(false);
+        inventoryMenu.gameObject.SetActive(true);
     }
     
     void Update()
     {
+        timer -= 1;
+        if(timer == 0)
+		{
+            inventoryMenu.gameObject.SetActive(false);
+        }
         InventoryControl();
     }
 
     private void InventoryControl()
     {
-        if (Input.GetKeyDown(KeyCode.Escape)) { 
+        if (Input.GetKeyDown(KeyCode.I)) { 
             
             if(GameManager.instance.isPaused)
         {

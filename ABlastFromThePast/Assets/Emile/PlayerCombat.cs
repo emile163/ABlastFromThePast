@@ -139,11 +139,11 @@ public class PlayerCombat : MonoBehaviour
         
 
     }
-    void OnDrawGizmosSelected()
+    /*void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(attackPoint.position, attackRange); 
         
 
-    }
+    }*/
 
 }

@@ -10,74 +10,51 @@ public class PickUpItem : MonoBehaviour
     private bool pickUpAllowed;
     public GameObject pickupEffect;
     public Item itemData;
-    public QuestGoal qG;
 
-    //initialiser le text de pick up invisible
-    private void Start()
-    {
-        pickUpText.gameObject.SetActive(false);
-    }
+    [SerializeField] private Text FullInventoryText;
+    [SerializeField] private Text pickUpText;
+    [SerializeField] Item item;
+    [SerializeField] Inventory inventory;
+     
+
+    private bool isInRange;
 
     private void Update()
     {
-        if(pickUpAllowed && Input.GetKeyDown(KeyCode.E))
+        if(isInRange && Input.GetKeyDown(KeyCode.E) && item is RessourceItem)
         {
+            inventory.AddRessourceItem(item);
+            Destroy(gameObject);
+        }
+        else if (isInRange && Input.GetKeyDown(KeyCode.E) && inventory.IsFull() == false)
+        {
+            
             PickUp();///////////////// mods ici
-            if (qG.goalType== GoalType.Gathering)
-            if (itemData.iT == qG.it)
-            {
-                qG.currentAmount++;
-            }
+
+            inventory.AddItem(item);
+            Destroy(gameObject);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        
-        if (other.tag == "Player")
+        isInRange = true;
+        if (inventory.IsFull() == false)
         {
             pickUpText.gameObject.SetActive(true);
-            pickUpAllowed = true;
+
+        } else {
+            FullInventoryText.gameObject.SetActive(true);
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-
-        if (other.tag == "Player")
-        {
-            pickUpText.gameObject.SetActive(false);
-            pickUpAllowed = false;
-        }
+        isInRange = false;
+        pickUpText.gameObject.SetActive(false);
+        FullInventoryText.gameObject.SetActive(false);
+        
     }
 
-    private void PickUp()
-    {
-        /*for (int i = 0; i < GameManager.instance.items.Count; i++)
-        {
-            Debug.Log("CANNOT PICK UP!!   "+ GameManager.instance.items.Count);
-            if (GameManager.instance.items.Contains(itemData))
-            {
-                Instantiate(pickupEffect, transform.position, Quaternion.identity);
-                Destroy(gameObject);
-                GameManager.instance.AddItem(itemData);
-            }
-            else
-            {
-                if (GameManager.instance.items.Count < GameManager.instance.slots.Length)
-                {
-                    Instantiate(pickupEffect, transform.position, Quaternion.identity);
-                    Destroy(gameObject);
-                    GameManager.instance.AddItem(itemData);
-                }
-                else
-                {
-                    Debug.Log("CANNOT PICK UP!!");*/
-                                    Instantiate(pickupEffect, transform.position, Quaternion.identity);
-                       Destroy(gameObject);
-                     GameManager.instance.AddItem(itemData);
-              /*  }
-            }
-        }*/
-    }
+    
 }
