@@ -8,6 +8,11 @@ public class Enemy : MonoBehaviour
     public int maxHealth = 100;
     int currentHealth;
     public GameObject RandomDrop;
+    /// <summary>
+    /// /////////////////// public MonsterType mT;
+    /// /////////////////// public QueteGoal qG;
+    /// </summary>
+
     public GameObject bloodanim;
 
     void Start()
@@ -27,6 +32,19 @@ public class Enemy : MonoBehaviour
     }
     void Die()
     {
+
+        Destroy(host);
+        this.enabled = false;
+        GetComponent<Collider2D>().enabled = false;
+
+
+        ///////////////////////////////////// if (qg.goalType==GoalType.Kill){
+        ///if (qg.mT== mT){
+        ///qG.currentAmount++;
+        ///}}
+
+
+
         Destroy(gameObject);
         if (RandomDrop)
         {

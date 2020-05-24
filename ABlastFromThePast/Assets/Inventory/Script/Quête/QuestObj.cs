@@ -2,39 +2,45 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class QuestObj : MonoBehaviour
+[System.Serializable]
+public class QuestObj 
 {
-    public enum QuestType {
-        gather, give, explore, kill
+    public int currentAmount;
+    public int goalAmount;
+    public QuestType questType;
+    public MonsterType objKill;
+    public RessourceType objCollecte;
+    public Target objExplo;
 
-    }
     public int questNumber;
     public QuestManager QM;
 
     public string startText;
     public string endText;
+    public bool active;
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
     public void StartQuest()
     {
-        QM.ShowQuestText(startText);
+        QM.ShowQuestText(startText, questNumber);
     }
     public void EndQuest()
     {
         QM.questCompleted[questNumber] = true;
-        gameObject.SetActive(false);
-        QM.ShowQuestText(endText);
+        //notifier que la quete est finie
+        QM.ShowQuestText(endText, questNumber);
+    }
+
+    public bool isActive()
+    {
+        return active; 
     }
 
 
+
+
 }
+public enum QuestType {
+        gather, give, explore, kill
+
+    }

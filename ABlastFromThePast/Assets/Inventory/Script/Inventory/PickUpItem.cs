@@ -5,6 +5,12 @@ using UnityEngine.UI;
 
 public class PickUpItem : MonoBehaviour
 {
+    [SerializeField]
+    private Text pickUpText;
+    private bool pickUpAllowed;
+    public GameObject pickupEffect;
+    public Item itemData;
+
     [SerializeField] private Text FullInventoryText;
     [SerializeField] private Text pickUpText;
     [SerializeField] Item item;
@@ -22,6 +28,9 @@ public class PickUpItem : MonoBehaviour
         }
         else if (isInRange && Input.GetKeyDown(KeyCode.E) && inventory.IsFull() == false)
         {
+            
+            PickUp();///////////////// mods ici
+
             inventory.AddItem(item);
             Destroy(gameObject);
         }

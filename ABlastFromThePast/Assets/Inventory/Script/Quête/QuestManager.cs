@@ -21,12 +21,21 @@ public class QuestManager : MonoBehaviour
     {
        
     }
-    public void ShowQuestText(string questText)
+    public void ShowQuestText(string questText, int questNumber)
     {
-        dMan.dialogueLines = new string[1];
-        dMan.dialogueLines[0] = questText;
-        dMan.currentLine = 0;
-        dMan.Name="";
-        dMan.ShowDialogue();
+        if (questCompleted[questNumber])
+        {
+            dMan.dialogueLines = new string[1];
+            dMan.dialogueLines[0] = questText;
+            dMan.currentLine = 0;
+            dMan.Name = "";
+            dMan.ShowDialogue();
+        }
     }
+
+    public void setActive(int questNumber)
+    {
+        quests[questNumber].active = !quests[questNumber].active;
+    }
+
 }
