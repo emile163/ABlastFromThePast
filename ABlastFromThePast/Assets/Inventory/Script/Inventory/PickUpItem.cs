@@ -12,7 +12,7 @@ public class PickUpItem : MonoBehaviour
     public Item itemData;
 
     [SerializeField] private Text FullInventoryText;
-    [SerializeField] private Text pickUpText;
+   // [SerializeField] private Text pickUpText;
     [SerializeField] Item item;
     [SerializeField] Inventory inventory;
      
@@ -29,7 +29,7 @@ public class PickUpItem : MonoBehaviour
         else if (isInRange && Input.GetKeyDown(KeyCode.E) && inventory.IsFull() == false)
         {
             
-            PickUp();///////////////// mods ici
+           // PickUp();///////////////// mods ici
 
             inventory.AddItem(item);
             Destroy(gameObject);
