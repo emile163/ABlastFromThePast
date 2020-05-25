@@ -1,30 +1,10 @@
 fileFormatVersion: 2
 guid: f128601fcfb040b42b145a5d13baf0cf
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 21300000
-    second: macks_A1
-  - first:
-      213: 8601182180138319472
-    second: macks_A1_0
-  - first:
-      213: 2783092460148484593
-    second: macks_A1_1
-  - first:
-      213: -4898734185510520795
-    second: macks_A1_2
-  - first:
-      213: 1885930709768464375
-    second: macks_A1_3
-  - first:
-      213: 9026415218857511454
-    second: macks_A1_4
-  - first:
-      213: 7032471050435948106
-    second: macks_A1_5
+  fileIDToRecycleName:
+    21300000: macks_A1
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -61,7 +41,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 100
-  spriteMode: 2
+  spriteMode: 0
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,14 +52,14 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 8
+  textureType: 0
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 4096
     resizeAlgorithm: 0
@@ -90,158 +70,17 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Standalone
-    maxTextureSize: 4096
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 100
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: macks_A1_0
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 294
-        width: 44
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 07e709f2f998d5770800000000000000
-      internalID: 8601182180138319472
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: macks_A1_1
-      rect:
-        serializedVersion: 2
-        x: 75
-        y: 295
-        width: 44
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f9e738d8d78f9620800000000000000
-      internalID: 2783092460148484593
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: macks_A1_2
-      rect:
-        serializedVersion: 2
-        x: 139
-        y: 295
-        width: 44
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 528359f7633340cb0800000000000000
-      internalID: -4898734185510520795
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: macks_A1_3
-      rect:
-        serializedVersion: 2
-        x: 267
-        y: 295
-        width: 42
-        height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f7efba0dfb2c2a10800000000000000
-      internalID: 1885930709768464375
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: macks_A1_4
-      rect:
-        serializedVersion: 2
-        x: 331
-        y: 295
-        width: 42
-        height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1a8e2b41d4444d70800000000000000
-      internalID: 9026415218857511454
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: macks_A1_5
-      rect:
-        serializedVersion: 2
-        x: 395
-        y: 295
-        width: 42
-        height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a4ee376292b589160800000000000000
-      internalID: 7032471050435948106
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 09b56350710ccd04fb37ebc23d5cb80d
-    internalID: 0
+    spriteID: 
     vertices: []
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
   spritePackingTag: Tileset
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
