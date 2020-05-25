@@ -382,10 +382,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &32291876
@@ -435,10 +433,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!212 &32291879
@@ -853,10 +849,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 11400000, guid: a3b43023e7362304da074f837b47f0ba, type: 2}
   inventory: {fileID: 0}
 --- !u!1 &70544405
@@ -1065,10 +1059,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 0}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 0}
+  pickUpText: {fileID: 0}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!4 &85218283 stripped
@@ -1267,10 +1259,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &101987668
@@ -1384,10 +1374,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &104070527
@@ -1501,10 +1489,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &109434114
@@ -1618,10 +1604,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1001 &111272041
@@ -1855,10 +1839,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!4 &158762345 stripped
@@ -2246,10 +2228,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &172712808
@@ -2659,10 +2639,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 11400000, guid: 22832aec873fd91459cedf210a65bd96, type: 2}
   inventory: {fileID: 421226325}
 --- !u!212 &205680115
@@ -3162,10 +3140,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &240809560
@@ -3279,10 +3255,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &241779964
@@ -3536,10 +3510,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &273110163
@@ -3997,10 +3969,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 11400000, guid: 22832aec873fd91459cedf210a65bd96, type: 2}
   inventory: {fileID: 421226325}
 --- !u!212 &313432834
@@ -4179,10 +4149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &315120156
@@ -4490,10 +4458,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &330323418
@@ -4869,10 +4835,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &344318132
@@ -4986,10 +4950,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &348815267
@@ -5138,10 +5100,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 11400000, guid: 22832aec873fd91459cedf210a65bd96, type: 2}
   inventory: {fileID: 421226325}
 --- !u!212 &349316447
@@ -5320,10 +5280,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &367248288
@@ -5437,10 +5395,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &374707018
@@ -5682,10 +5638,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &376223438
@@ -6030,10 +5984,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &410581300
@@ -6509,10 +6461,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &434781015
@@ -6731,10 +6681,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &443576570
@@ -7111,10 +7059,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &474891431
@@ -7301,10 +7247,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &486066046
@@ -8001,10 +7945,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &514478931
@@ -8118,10 +8060,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &516059661
@@ -8394,10 +8334,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 11400000, guid: bc097aa8890909b48a59747066190b02, type: 2}
   inventory: {fileID: 0}
 --- !u!1001 &525753136
@@ -8595,10 +8533,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &537544369
@@ -9044,10 +8980,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!212 &554093855
@@ -9643,10 +9577,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &584472041
@@ -9841,10 +9773,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &591818310
@@ -10430,10 +10360,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &619461600
@@ -10702,10 +10630,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &633307446
@@ -10819,10 +10745,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &637663254
@@ -10937,10 +10861,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &647977425
@@ -10990,10 +10912,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!212 &647977428
@@ -11171,10 +11091,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &650417042
@@ -11365,10 +11283,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &655058889
@@ -11774,10 +11690,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &664659174
@@ -11891,10 +11805,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &667378318
@@ -12478,10 +12390,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &701401637
@@ -12659,10 +12569,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!212 &707614640
@@ -12922,10 +12830,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &715751238
@@ -13039,10 +12945,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &718632704
@@ -13156,10 +13060,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &718633060
@@ -13273,10 +13175,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &728176229
@@ -13472,10 +13372,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &740224208
@@ -13863,10 +13761,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &755763679
@@ -14155,10 +14051,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &781862124
@@ -14553,10 +14447,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 11400000, guid: 22832aec873fd91459cedf210a65bd96, type: 2}
   inventory: {fileID: 421226325}
 --- !u!212 &798886862
@@ -14835,10 +14727,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &830987237
@@ -14917,7 +14807,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 830987237}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.23, y: 0.35, z: 0}
+  m_LocalPosition: {x: -1.19, y: 0.35, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children:
   - {fileID: 1233274715}
@@ -14991,10 +14881,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 11400000, guid: 22832aec873fd91459cedf210a65bd96, type: 2}
   inventory: {fileID: 421226325}
 --- !u!212 &832814419
@@ -15173,10 +15061,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &837639956
@@ -15408,10 +15294,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &848693264
@@ -15525,10 +15409,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &849414103
@@ -15895,10 +15777,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &862280613
@@ -16185,10 +16065,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 11400000, guid: 22832aec873fd91459cedf210a65bd96, type: 2}
   inventory: {fileID: 421226325}
 --- !u!212 &895272677
@@ -16367,10 +16245,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 11400000, guid: e9b71e3ae6ea1ca4a86db4e582b25e92, type: 2}
   inventory: {fileID: 0}
 --- !u!1 &901810709
@@ -16612,10 +16488,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &909013047
@@ -16977,10 +16851,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &919726833
@@ -17655,10 +17527,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &961576044
@@ -18022,10 +17892,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &993423329
@@ -18139,10 +18007,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &996509552 stripped
@@ -18179,10 +18045,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 0}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 0}
+  pickUpText: {fileID: 0}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!4 &996509555 stripped
@@ -18792,10 +18656,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1043851254
@@ -19828,10 +19690,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1110404554
@@ -20230,10 +20090,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!212 &1147375143
@@ -21148,16 +21006,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ShowSetting
       objectReference: {fileID: 0}
-    - target: {fileID: 6119443730037315784, guid: d12e2e132eb308c448dd7efe8bf73f3b,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 200.47998
-      objectReference: {fileID: 0}
-    - target: {fileID: 6119443730037315784, guid: d12e2e132eb308c448dd7efe8bf73f3b,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -96.59009
-      objectReference: {fileID: 0}
     - target: {fileID: 6119443730101036058, guid: d12e2e132eb308c448dd7efe8bf73f3b,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -21281,10 +21129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1001 &1199982234
@@ -21809,10 +21655,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1206101953
@@ -22123,10 +21967,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1227510747
@@ -22313,10 +22155,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1233274714
@@ -22640,10 +22480,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1277359197
@@ -23067,10 +22905,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 11400000, guid: 81838db242bc4a942aea4dd1c175cbf7, type: 2}
   inventory: {fileID: 421226325}
 --- !u!58 &1298999904
@@ -23291,10 +23127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 11400000, guid: 22832aec873fd91459cedf210a65bd96, type: 2}
   inventory: {fileID: 421226325}
 --- !u!212 &1307559372
@@ -23555,10 +23389,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1325287842
@@ -24347,10 +24179,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1376575133
@@ -24464,10 +24294,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1377449058
@@ -24581,10 +24409,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1400180826
@@ -24796,10 +24622,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1001 &1410541252
@@ -25476,10 +25300,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1429502137
@@ -25675,10 +25497,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1439954286
@@ -26040,10 +25860,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1462883947
@@ -26157,10 +25975,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1464741326
@@ -26455,10 +26271,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1490559344
@@ -26735,10 +26549,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1507489550
@@ -26869,10 +26681,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 11400000, guid: 22832aec873fd91459cedf210a65bd96, type: 2}
   inventory: {fileID: 421226325}
 --- !u!212 &1512467073
@@ -27227,10 +27037,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 11400000, guid: 4df2c250ccb9da7479d3e7a94a093ae5, type: 2}
   inventory: {fileID: 421226325}
 --- !u!58 &1538690079
@@ -27507,10 +27315,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1552074251
@@ -27560,10 +27366,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!212 &1552074254
@@ -27741,10 +27545,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1558936661
@@ -27986,10 +27788,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1566792210
@@ -28184,10 +27984,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1579760022
@@ -28670,10 +28468,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1598821805
@@ -28869,10 +28665,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1610847008
@@ -29166,10 +28960,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!4 &1625683743 stripped
@@ -29307,10 +29099,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!212 &1631940868
@@ -30011,10 +29801,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 11400000, guid: 176a5255715d22c4faf5de8a1654d457, type: 2}
   inventory: {fileID: 0}
 --- !u!212 &1660130996
@@ -30374,10 +30162,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1686551658
@@ -30726,10 +30512,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1694993566
@@ -31121,10 +30905,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1714118168
@@ -31815,10 +31597,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1744225187
@@ -32175,10 +31955,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 11400000, guid: 53b9b5eba0eec0b408ed0972f2f66dd8, type: 2}
   inventory: {fileID: 0}
 --- !u!1 &1757992463
@@ -32369,10 +32147,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1761374457
@@ -32924,10 +32700,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1790140439
@@ -33266,10 +33040,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!212 &1826813792
@@ -33547,10 +33319,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1841840521
@@ -33664,10 +33434,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1844168690 stripped
@@ -33704,10 +33472,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 0}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 0}
+  pickUpText: {fileID: 0}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!4 &1844168693 stripped
@@ -33909,10 +33675,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1859997028
@@ -34402,10 +34166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1895074739
@@ -34601,10 +34363,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1904971666
@@ -35103,10 +34863,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1918426438
@@ -35220,10 +34978,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1919197829
@@ -35337,10 +35093,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1921720218
@@ -35949,10 +35703,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1966880323
@@ -36320,10 +36072,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1980668000
@@ -36717,10 +36467,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &1996796048
@@ -37043,10 +36791,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 0}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 0}
+  pickUpText: {fileID: 0}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!4 &2021408112 stripped
@@ -37166,10 +36912,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &2029377844
@@ -37508,10 +37252,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &2068446422
@@ -37698,10 +37440,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &2072009078
@@ -37815,10 +37555,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &2086268868
@@ -38108,10 +37846,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1001 &2098105480
@@ -38442,10 +38178,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &2108586090
@@ -38651,10 +38385,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &2115126116
@@ -38866,10 +38598,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 1417613346}
-  pickupEffect: {fileID: 0}
-  itemData: {fileID: 0}
   FullInventoryText: {fileID: 1518711871}
+  pickUpText: {fileID: 1417613346}
   item: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!1 &2123574058
