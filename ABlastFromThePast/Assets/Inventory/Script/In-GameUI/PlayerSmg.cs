@@ -8,9 +8,9 @@ public class PlayerSmg : MonoBehaviour
 
     public float armureMax = 100f;
 
-    private float currentHealth;
+    private static float currentHealth = 100f;
 
-    private float currentArmure;
+    private static float currentArmure = 100f;
 
     public HealthBar hb;
 
@@ -26,10 +26,9 @@ public class PlayerSmg : MonoBehaviour
 
     void Start()
     {
-        currentArmure = armureMax;
-        currentHealth = MaxHealth;
-        hb.SetMaxHealth(MaxHealth);
-        ab.SetMaxArmure(armureMax);
+       
+        hb.SetMaxHealth(MaxHealth, currentHealth);
+        ab.SetMaxArmure(armureMax, currentArmure);
     }
 
     // Update is called once per frame

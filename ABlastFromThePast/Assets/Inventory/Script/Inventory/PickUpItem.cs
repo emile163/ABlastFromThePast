@@ -8,17 +8,21 @@ public class PickUpItem : MonoBehaviour
     [SerializeField]
     private Text pickUpText;
     private bool pickUpAllowed;
-    public GameObject pickupEffect;
-    public Item itemData;
+    public Item item;
 
     [SerializeField] private Text FullInventoryText;
    // [SerializeField] private Text pickUpText;
-    [SerializeField] Item item;
-    [SerializeField] Inventory inventory;
+    private Inventory inventory;
+    private GameObject inv;
      
 
     private bool isInRange;
 
+    void Awake()
+	{
+        inv = GameObject.Find("Inventory");
+        inventory = inv.GetComponent<Inventory>();
+	}
     private void Update()
     {
         if(isInRange && Input.GetKeyDown(KeyCode.E) && item is RessourceItem)

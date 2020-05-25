@@ -69,8 +69,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 906105453
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -661775723740484451, guid: 04654a9413b420e4681fcb3acaba09b9,
     type: 3}
@@ -98,6 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickUpText: {fileID: 0}
   item: {fileID: 11400000, guid: 0cc72e38a75466b41b75cdfb76f7591b, type: 2}
+  FullInventoryText: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!58 &3548355853564458354
 CircleCollider2D:

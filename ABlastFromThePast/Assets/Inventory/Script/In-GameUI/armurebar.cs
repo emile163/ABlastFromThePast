@@ -7,10 +7,10 @@ public class armurebar : MonoBehaviour
 {
     public Slider slider;
 
-    public void SetMaxArmure(float Armure)
+    public void SetMaxArmure(float MaxArmure, float currentArmure)
 	{
-		slider.maxValue = Armure;
-		slider.value = Armure;
+		slider.maxValue = MaxArmure;
+		slider.value = currentArmure;
 	}
 
 	public void SetArmure(float Armure)

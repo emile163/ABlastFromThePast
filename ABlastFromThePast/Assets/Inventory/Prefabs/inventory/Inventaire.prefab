@@ -1079,7 +1079,7 @@ MonoBehaviour:
   equipmentPanel: {fileID: 1805087148906416890}
   AttackDisplay: {fileID: 1805087149661795938}
   DeffenceDisplay: {fileID: 1805087148933087934}
-  Healing: 0
+  player: {fileID: 0}
 --- !u!1 &1805087148051593910
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class UIManagerInventory : MonoBehaviour
 {
-    public GameObject inventoryMenu;
+    private GameObject inv;
 
     private int timer = 1;
 
     private void Start()
     {
-        inventoryMenu.gameObject.SetActive(true);
+        inv = GameObject.Find("Inventaire");
+        inv.gameObject.SetActive(true);
     }
     
     void Update()
@@ -18,7 +19,7 @@ public class UIManagerInventory : MonoBehaviour
         timer -= 1;
         if(timer == 0)
 		{
-            inventoryMenu.gameObject.SetActive(false);
+            inv.gameObject.SetActive(false);
         }
         InventoryControl();
     }
@@ -40,14 +41,14 @@ public class UIManagerInventory : MonoBehaviour
     
     private void Resume()
     {
-        inventoryMenu.gameObject.SetActive(false);
+        inv.gameObject.SetActive(false);
         Time.timeScale = 1.0f;
         GameManager.instance.isPaused = false;
     }
 
     private void Pause()
     {
-        inventoryMenu.gameObject.SetActive(true);
+        inv.gameObject.SetActive(true);
         Time.timeScale = 0.0f;
         GameManager.instance.isPaused = true;
     }
