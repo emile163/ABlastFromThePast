@@ -14,11 +14,13 @@ public class InventoryManager : MonoBehaviour
     private int AttaquePersonnage;
     private int DefencPersonnage;
     private EatableItem EI;
-    public PlayerSmg player;
+    private PlayerSmg player;
+    private GameObject pla;
 
     private void Awake()
     {
-        player.GetComponent<PlayerSmg>();
+        pla = GameObject.FindWithTag("Player");
+        player = pla.GetComponent<PlayerSmg>();
         inventory.OnItemRightClickedEvent += EquipFromInventory;
         equipmentPanel.OnItemRightClickedEvent += UnequipFromEquipmentPanel;
     }

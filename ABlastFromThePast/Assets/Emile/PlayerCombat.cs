@@ -56,7 +56,6 @@ public class PlayerCombat : MonoBehaviour
             movingDown = true;
             movingLeft = false;
             movingRight = false;
-            Debug.Log("bas");
         }
         animator.SetBool("attack", false);
 

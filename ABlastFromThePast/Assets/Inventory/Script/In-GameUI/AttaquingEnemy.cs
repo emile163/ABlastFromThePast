@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class AttaquingEnemy : MonoBehaviour
 {
-    public Transform player;
 
     public float visionRange;
 
@@ -18,10 +17,15 @@ public class AttaquingEnemy : MonoBehaviour
 
     public float AttackSpeed;
 
+	private PlayerSmg player;
+
+	private GameObject pla;
+
 	private float timer;
 	void Start()
 	{
-		player.GetComponent<PlayerSmg>();
+		pla = GameObject.FindWithTag("Player");
+		player = pla.GetComponent<PlayerSmg>();
 		timer = 1 / AttackSpeed;
 		
 	}

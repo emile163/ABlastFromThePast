@@ -8,24 +8,13 @@ public class Inventory : MonoBehaviour
     [SerializeField] List<Item> items;
     [SerializeField] Transform itemsParent;
     [SerializeField] ItemSlot[] itemSlots;
-   // public List<Item> ListDonne;
     private bool PeuStack = false;
 
     public event Action<Item> OnItemRightClickedEvent;
 
     private void Start()
     {
-       // ListDonne = SceneChange.ListADonne;
-
-        /*if (ListDonne != null)
-		{
-            Debug.Log("i= ");
-            for (int i = 0; i < ListDonne.Count; i++)
-			{
-                items[i] = ListDonne[i];
-                Debug.Log("i= " + i);
-			}
-		}*/
+      
         for (int i = 0; i < itemSlots.Length; i++)
         {
             itemSlots[i].OnRightClickEvent += OnItemRightClickedEvent;
