@@ -11,7 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/tests/pickitup.unity
     guid: 2f23788047cc15045b80cc35fc2afcf6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/In-GameUI.unity
     guid: a030f28c2a58fd84a804f6d891c53497
+  - enabled: 1
+    path: Assets/Scenes/Maps/Map1/Map1_exterieur 1.unity
+    guid: a3bd197cb71f91547bdff96e96baa8ac
   m_configObjects: {}

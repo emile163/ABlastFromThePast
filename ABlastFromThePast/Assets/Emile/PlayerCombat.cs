@@ -26,95 +26,72 @@ public class PlayerCombat : MonoBehaviour
     }
     void Update()
     {
-        animator.SetBool("attack", false);
-
-        if (moving == true)
+        if (Input.GetAxisRaw("Horizontal") > 0.5f)
         {
-            if (Input.GetKey(KeyCode.A) && !(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)))
-            {
-                movingUp = false;
-                movingDown = false;
-            }
-            if (Input.GetKey(KeyCode.D) && !(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)))
-            {
-                movingUp = false;
-                movingDown = false;
-            }
-            if (Input.GetKey(KeyCode.W) && !(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.A)))
-            {
-
-                movingRight = false;
-                movingLeft = false;
-            }
-            if (Input.GetKey(KeyCode.S) && !(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)))
-            {
-                movingRight = false;
-                movingLeft = false;
-            }
-        }
-
-        if (Input.GetKey(KeyCode.W))
-        {
-            moving = true;
-            movingUp = true;
-            movingDown = false;
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            moving = true;
             movingUp = false;
-            movingDown = true;
-        }
-        
-         
-        
-        if (Input.GetKey(KeyCode.A))
-        {
-            moving = true;
-            movingLeft = true;
-            movingRight = false;
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            moving = true;
+            movingDown = false;
             movingLeft = false;
             movingRight = true;
         }
-        if(!(Input.GetKey(KeyCode.D)|| Input.GetKey(KeyCode.W)|| Input.GetKey(KeyCode.A)|| Input.GetKey(KeyCode.S)))
+
+        if (Input.GetAxisRaw("Vertical") > 0.5f)
         {
-            
-            moving = false;
+            movingUp = true;
+            movingDown = false;
+            movingLeft = false;
+            movingRight = false;
         }
+
+        if (Input.GetAxisRaw("Horizontal") < -0.5f)
+        {
+            movingUp = false;
+            movingDown = false;
+            movingLeft = true;
+            movingRight = false;
+        }
+
+        if (Input.GetAxisRaw("Vertical") < -0.5f)
+        {
+            movingUp = false;
+            movingDown = true;
+            movingLeft = false;
+            movingRight = false;
+            Debug.Log("bas");
+        }
+        animator.SetBool("attack", false);
 
 
         if (Time.time >= nextAttackTime)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-               
-
-                    attackPoint.position = pos.position;
-
-                 
-                
+                attackPoint.position = pos.position;
 
                 if (movingUp == true)
                 {
+                    animator.SetFloat("moveY", 1);
+                    animator.SetFloat("moveX", 0);
                     attackPoint.transform.position += new Vector3(0, 0.18f, 0);
                     animator.SetBool("attack", true);
                 }
                 if (movingDown == true)
                 {
+                    animator.SetFloat("moveY", -1);
+                    animator.SetFloat("moveX", 0);
                     attackPoint.transform.position += new Vector3(0, -0.18f, 0);
                     animator.SetBool("attack", true);
                 }
                if (movingLeft == true)
                 {
+                    animator.SetFloat("moveX", -1);
+                    animator.SetFloat("moveY", 0);
                     attackPoint.transform.position += new Vector3(-0.18f, 0, 0);
                     animator.SetBool("attack", true);
                 }
                if (movingRight == true)
                 {
+                    animator.SetFloat("moveX", 1);
+                    animator.SetFloat("moveY", 0);
                     attackPoint.transform.position += new Vector3(0.18f, 0, 0);
                     animator.SetBool("attack", true);
                 }

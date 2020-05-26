@@ -12,11 +12,15 @@ public class PlayerSmg : MonoBehaviour
 
     private static float currentArmure = 100f;
 
-    public HealthBar hb;
+    private HealthBar hb;
 
-    public armurebar ab;
+    private GameObject Healthbar;
 
-    public GameObject GameOverPanel;
+    private armurebar ab;
+
+    private GameObject ArmureBar;
+
+    private GameObject GameOverPanel;
 
     private float extraHealing = 0;
 
@@ -26,7 +30,11 @@ public class PlayerSmg : MonoBehaviour
 
     void Start()
     {
-       
+        GameOverPanel = GameObject.Find("GameOverUI");
+        ArmureBar = GameObject.Find("fillArmure");
+        ab = ArmureBar.GetComponent<armurebar>();
+        Healthbar = GameObject.Find("fillhealth");
+        hb = Healthbar.GetComponent<HealthBar>();
         hb.SetMaxHealth(MaxHealth, currentHealth);
         ab.SetMaxArmure(armureMax, currentArmure);
     }
