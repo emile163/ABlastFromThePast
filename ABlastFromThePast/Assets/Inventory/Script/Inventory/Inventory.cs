@@ -9,6 +9,7 @@ public class Inventory : MonoBehaviour
     [SerializeField] Transform itemsParent;
     [SerializeField] ItemSlot[] itemSlots;
     private bool PeuStack = false;
+ 
 
     public event Action<Item> OnItemRightClickedEvent;
 
@@ -97,4 +98,18 @@ public class Inventory : MonoBehaviour
         }
         
     }
+
+public ItemSlot[] GetItemSlots()
+    {
+        return itemSlots;
+    }
+
+
+}
+public enum itemType
+{
+    Bois,
+    Ble,
+    Clément
+
 }

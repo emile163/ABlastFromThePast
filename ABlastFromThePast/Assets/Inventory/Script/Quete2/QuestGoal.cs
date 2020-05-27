@@ -7,16 +7,28 @@ public class QuestGoal
 {
     public GoalType goalType;
     public itemType it;
-    public MonsterType mT;
+    public TypeDeMonstre mT;
     public Target target;
     public int requiredAmount;
-    public int currentAmount;
+    public int currentAmount=0;
+    private bool completed;
 public bool IsReached()
 {
-        return (currentAmount >= requiredAmount);
+        if (!completed)
+            return (currentAmount >= requiredAmount);
+        else return true;
+}
+public int Atteint(Queteobjet quest )
+{
+if (quest.qG.IsReached())
+    {
+
+        return quest.indexQuete; 
+    }else return -1;
+    }
+    
 }
 
-}
 
 
 public enum GoalType

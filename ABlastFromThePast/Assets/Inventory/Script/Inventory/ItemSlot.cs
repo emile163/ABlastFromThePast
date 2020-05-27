@@ -19,6 +19,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandle
     public event Action<Item> OnRightClickEvent;
     public Button RemoveButton;
 
+
     void Start()
     {
         button.SetActive(false);

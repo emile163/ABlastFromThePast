@@ -11,6 +11,7 @@ using UnityEngine;
         private Animator anim;
         private bool playerMoving;
         private Vector2 lastMove;
+    public List<Queteobjet> listeQuete;
 
         void Start() {
             anim = GetComponent<Animator>();
@@ -40,5 +41,16 @@ using UnityEngine;
             anim.SetFloat("LastMoveX", lastMove.x);
             anim.SetFloat("LastMoveY", lastMove.y);
         }
+    public static void incrementation(PlayerControllerclem play, int i)
+    {
+        play.incrementeGoal(i);
+
+    }
+
+    public void incrementeGoal(int i)
+    {
+        this.listeQuete[i].qG.
+            currentAmount++;
+    }
     }
     

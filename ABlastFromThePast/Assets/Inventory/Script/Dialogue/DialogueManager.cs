@@ -1,11 +1,13 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-
+	private PlayerControllerclem player;
+	public DialogueHolder dHolder ;
 	public GameObject dBox;
 	public Text instruction;
 	public Text dText;
@@ -15,7 +17,6 @@ public class DialogueManager : MonoBehaviour
 	public Button questButton;
 
 	public bool hasQuest;
-	public bool given1timeQuest;
 	public QuestObj Quest;
 
 	public string[] dialogueLines;
@@ -45,20 +46,31 @@ public class DialogueManager : MonoBehaviour
 			currentLine = 0;
 		}
 		dText.text = dialogueLines[currentLine];
-if (currentLine == dialogueLines.Length - 1)
+		if (currentLine == dialogueLines.Length - 1)
 		{
 			instruction.text = "Appuyez sur espace pour finir le dialogue";
-			if (hasQuest && !given1timeQuest)
+			if (hasQuest )
 			{
-				given1timeQuest = true;
-				questButton.gameObject.SetActive(true) ;
 				
+				questButton.gameObject.SetActive(true);
+
 			}
 		}
-		else instruction.text = "Press space to continue";
-	
+		else
+		{
+			instruction.text = "Press space to continue";
+			questButton.gameObject.SetActive(false);
+		}
+		try
+		{
+			if ((player = FindObjectOfType<PlayerControllerclem>()).listeQuete[0].qG.IsReached())
+			{
+				questButton.gameObject.SetActive(true);
 
-	
+
+			}
+		}catch (ArgumentOutOfRangeException e) { }
+
 	}
 	public void ShowBox(string dialogue)
 	{
@@ -80,4 +92,13 @@ if (currentLine == dialogueLines.Length - 1)
 		dBox.SetActive(true);
 		name.text = Name;
     }
+	public void setCurrentLine0()
+	{
+		hasQuest = false;
+		this.currentLine = 0;
+		this.dialogueActive = false;
+		dHolder.acceptQuest();
+	}
+
+
 }
