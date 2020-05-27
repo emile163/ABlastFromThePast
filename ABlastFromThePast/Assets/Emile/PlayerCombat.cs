@@ -9,7 +9,7 @@ public class PlayerCombat : MonoBehaviour
     
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
-    public int attackDamage = 40;
+    public int attackDamage = 10;
     public float attackRate = 2f;
     float nextAttackTime = 0f;
     public Transform pos;
@@ -17,6 +17,7 @@ public class PlayerCombat : MonoBehaviour
     bool movingLeft;
     bool movingUp ;
     bool movingDown;
+    bool blocking;
     bool moving;
     private Animator animator;
     void Start()
@@ -62,7 +63,7 @@ public class PlayerCombat : MonoBehaviour
 
         if (Time.time >= nextAttackTime)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) && blocking == false)
             {
                 attackPoint.position = pos.position;
 
@@ -94,6 +95,13 @@ public class PlayerCombat : MonoBehaviour
                     attackPoint.transform.position += new Vector3(0.18f, 0, 0);
                     animator.SetBool("attack", true);
                 }
+				else
+				{
+                    animator.SetFloat("moveY", -1);
+                    animator.SetFloat("moveX", 0);
+                    attackPoint.transform.position += new Vector3(0, -0.18f, 0);
+                    animator.SetBool("attack", true);
+                }
                
                 Attack();
                 nextAttackTime = Time.time + 1f / attackRate;
@@ -115,11 +123,21 @@ public class PlayerCombat : MonoBehaviour
         
 
     }
-    /*void OnDrawGizmosSelected()
+
+    public void SetAttaque(int attaquePersonnage)
     {
-        Gizmos.DrawWireSphere(attackPoint.position, attackRange); 
-        
+        attackDamage = attaquePersonnage;
+    }
 
-    }*/
-
+    public void Isblockking(bool block)
+	{
+        if(block == true)
+		{
+            blocking = true;
+		}
+		else
+		{
+            blocking = false;
+		}
+	}
 }

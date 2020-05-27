@@ -11,16 +11,18 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] Text AttackDisplay;
     [SerializeField] Text DeffenceDisplay;
     private int Healing;
-    private int AttaquePersonnage;
+    private int AttaquePersonnageEnPlus;
     private int DefencPersonnage;
     private EatableItem EI;
     private PlayerSmg player;
+    private PlayerCombat mmplayer;
     private GameObject pla;
 
     private void Awake()
     {
         pla = GameObject.FindWithTag("Player");
         player = pla.GetComponent<PlayerSmg>();
+        mmplayer = pla.GetComponent<PlayerCombat>();
         inventory.OnItemRightClickedEvent += EquipFromInventory;
         equipmentPanel.OnItemRightClickedEvent += UnequipFromEquipmentPanel;
     }
@@ -37,11 +39,13 @@ public class InventoryManager : MonoBehaviour
         if(item is EquipableItem)
         {
             Equip((EquipableItem)item);
-            AttaquePersonnage = 10 + equipmentPanel.Nombreattaque();
-            AttackDisplay.text = AttaquePersonnage.ToString();
+            AttaquePersonnageEnPlus = 10 + equipmentPanel.Nombreattaque();
+            AttackDisplay.text = AttaquePersonnageEnPlus.ToString();
+            mmplayer.SetAttaque(AttaquePersonnageEnPlus);
 
-            DefencPersonnage = 10 + equipmentPanel.NombreDefence();
+            DefencPersonnage = equipmentPanel.NombreDefence();
             DeffenceDisplay.text = DefencPersonnage.ToString();
+            player.AjouterArmure(DefencPersonnage);
         }
     }
     private void UnequipFromEquipmentPanel(Item item)
@@ -49,11 +53,12 @@ public class InventoryManager : MonoBehaviour
         if(item is EquipableItem)
         {
             Unequip((EquipableItem)item);
-            AttaquePersonnage = 10 + equipmentPanel.Nombreattaque();
-            AttackDisplay.text = AttaquePersonnage.ToString();
+            AttaquePersonnageEnPlus = 10 + equipmentPanel.Nombreattaque();
+            AttackDisplay.text = AttaquePersonnageEnPlus.ToString();
 
-            DefencPersonnage = 10 + equipmentPanel.NombreDefence();
+            DefencPersonnage = equipmentPanel.NombreDefence();
             DeffenceDisplay.text = DefencPersonnage.ToString();
+            player.EnleverArmure(DefencPersonnage);
         }
     }
 
@@ -82,6 +87,11 @@ public class InventoryManager : MonoBehaviour
         if(!inventory.IsFull() && equipmentPanel.RemoveItem(item))
         {
             inventory.AddItem(item);
+            if(item is EquipableItem)
+			{
+                item.stat = item.stat / 2;
+
+            }
         }
     }
 }

@@ -6,11 +6,13 @@ public class PlayerSmg : MonoBehaviour
 {
     public float MaxHealth = 100f;
 
-    public float armureMax = 100f;
+    public float armureMax = 0;
 
     private static float currentHealth = 100f;
 
-    private static float currentArmure = 100f;
+    private static float currentArmure = 0;
+
+    private float tempArmure;
 
     private HealthBar hb;
 
@@ -24,9 +26,15 @@ public class PlayerSmg : MonoBehaviour
 
     private float extraHealing = 0;
 
+    private bool blocking = false;
+
     public GameObject bloodanim;
 
     public Transform pos;
+
+    public GameObject shield;
+
+    public PlayerCombat combat;
 
     void Start()
     {
@@ -37,12 +45,26 @@ public class PlayerSmg : MonoBehaviour
         hb = Healthbar.GetComponent<HealthBar>();
         hb.SetMaxHealth(MaxHealth, currentHealth);
         ab.SetMaxArmure(armureMax, currentArmure);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-		if (Input.GetKeyDown(KeyCode.T))
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            blocking = true;
+            shield.SetActive(true);
+            combat.Isblockking(true);
+        }
+        if (Input.GetKeyUp(KeyCode.B))
+        {
+            blocking = false;
+            shield.SetActive(false);
+            combat.Isblockking(false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.T))
 		{
             takedmg(79f);
 		}
@@ -67,25 +89,49 @@ public class PlayerSmg : MonoBehaviour
 
     public void takedmg (float dmg)
 	{
-        Instantiate(bloodanim, pos.position, pos.rotation);
-        if (currentArmure < dmg)
+        if (blocking == false)
         {
-            dmg = dmg - currentArmure;
-            currentArmure = 0;
-            currentHealth -= dmg;
-            hb.SetHealth(currentHealth);
-            ab.SetArmure(currentArmure);
+            Instantiate(bloodanim, pos.position, pos.rotation);
+            if (currentArmure < dmg)
+            {
+                dmg = dmg - currentArmure;
+                currentArmure = 0;
+                currentHealth -= dmg;
+                hb.SetHealth(currentHealth);
+                ab.SetArmure(currentArmure);
+            }
+            else if (currentArmure <= 0)
+            {
+                currentHealth -= dmg;
+                hb.SetHealth(currentHealth);
+            }
+            if (currentArmure >= dmg)
+            {
+                currentArmure -= dmg;
+                ab.SetArmure(currentArmure);
+            }
         }
-        else if (currentArmure <= 0)
-		{
-            currentHealth -= dmg;
-            hb.SetHealth(currentHealth);
+    }
+
+    public void AjouterArmure(int _armure)
+	{
+        tempArmure = armureMax - currentArmure;
+        armureMax = _armure;
+        currentArmure = armureMax - tempArmure;
+        ab.SetMaxArmure(armureMax, currentArmure);
+    }
+
+    public void EnleverArmure(int _armure)
+	{
+        tempArmure = armureMax - currentArmure; //dmg done
+        if (armureMax - _armure < tempArmure)
+        {
+            currentArmure = _armure - (tempArmure - (armureMax - _armure));
         }
-         if(currentArmure >= dmg)
-		{
-            currentArmure -= dmg;
-            ab.SetArmure(currentArmure);
-		}
+        else
+            currentArmure = _armure;
+        armureMax = _armure;
+        ab.SetMaxArmure(armureMax, currentArmure);
     }
 
     public void Heal(float healing)

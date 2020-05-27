@@ -20,6 +20,7 @@ public class UIManagerInventory : MonoBehaviour
         if(timer == 0)
 		{
             inv.gameObject.SetActive(false);
+            Resume();
         }
         InventoryControl();
     }

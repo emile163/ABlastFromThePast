@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1852838ef3f7ad14db90172e635458ca, type: 3}
-  m_Name: Armure de cuir souple
+  m_Name: casque
   m_EditorClassIdentifier: 
-  itemName: Armure de cuire souple
+  itemName: 
   itemDes: 
-  itemSprite: {fileID: 21300000, guid: 1a7d8d77a1aaf2b409841a97f192ce63, type: 3}
+  itemSprite: {fileID: -932760789262634979, guid: 04654a9413b420e4681fcb3acaba09b9,
+    type: 3}
   NomStat: 1
-  stat: 150
-  EquipmentType: 1
+  stat: 1
+  EquipmentType: 0
