@@ -5,26 +5,39 @@ using UnityEngine.UI;
 
 public class PickUpItem : MonoBehaviour
 {
-    [SerializeField]
-    private Text pickUpText;
-    private bool pickUpAllowed;
+    
     public Item item;
-
-    [SerializeField] private Text FullInventoryText;
-   // [SerializeField] private Text pickUpText;
-    private Inventory inventory;
+    private static Inventory inventory;
     private GameObject inv;
+    private static GameObject pickUpText;
+    private static GameObject FullInventoryText;
+    private float timer = 1;
+    public static bool DejaInv = false;
      
 
     private bool isInRange;
 
-    void Awake()
+    void Start()
 	{
-        inv = GameObject.Find("Inventory");
-        inventory = inv.GetComponent<Inventory>();
+        if (DejaInv == false)
+        {
+            FullInventoryText = GameObject.Find("InventaireRempli");
+            pickUpText = GameObject.Find("PickUpText");
+            inv = GameObject.Find("Inventory");
+            inventory = inv.GetComponent<Inventory>();
+            DejaInv = true;
+        }
 	}
+
     private void Update()
     {
+        timer -= 1;
+        if(timer == 0)
+		{
+            pickUpText.SetActive(false);
+            FullInventoryText.SetActive(false);
+		}
+
         if(isInRange && Input.GetKeyDown(KeyCode.E) && item is RessourceItem)
         {
             inventory.AddRessourceItem(item);
@@ -45,18 +58,18 @@ public class PickUpItem : MonoBehaviour
         isInRange = true;
         if (inventory.IsFull() == false)
         {
-            pickUpText.gameObject.SetActive(true);
+            pickUpText.SetActive(true);
 
         } else {
-            FullInventoryText.gameObject.SetActive(true);
+            FullInventoryText.SetActive(true);
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         isInRange = false;
-        pickUpText.gameObject.SetActive(false);
-        FullInventoryText.gameObject.SetActive(false);
+        pickUpText.SetActive(false);
+        FullInventoryText.SetActive(false);
         
     }
 

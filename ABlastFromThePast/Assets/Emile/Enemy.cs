@@ -8,6 +8,11 @@ public class Enemy : MonoBehaviour
     public int maxHealth = 100;
     int currentHealth;
     public GameObject RandomDrop;
+    public movingennemy me;
+    private Inventory inventory;
+    private GameObject inv;
+    private GameObject pickUpText;
+    private GameObject FullInventoryText;
     /// <summary>
     /// /////////////////// public MonsterType mT;
     /// /////////////////// public QueteGoal qG;
@@ -18,7 +23,10 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
-        
+
+        inv = GameObject.Find("Inventory");
+        inventory = inv.GetComponent<Inventory>();
+
     }
     public void TakeDamage(int damage)
     {
@@ -26,6 +34,7 @@ public class Enemy : MonoBehaviour
         Instantiate(bloodanim, transform.position, transform.rotation);
 
         if (currentHealth <= 0) {
+            inv.SetActive(true);
             Die();
         }
     
@@ -37,9 +46,11 @@ public class Enemy : MonoBehaviour
         ///qG.currentAmount++;
         ///}}
         Destroy(gameObject);
+        me.destroy();
         if (RandomDrop)
         {
             Instantiate(RandomDrop, transform.position, transform.rotation);
+            
         }
     }
 
