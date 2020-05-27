@@ -7,35 +7,16 @@ public class PickUpItem : MonoBehaviour
 {
     
     public Item item;
-<<<<<<< HEAD
     private PlayerControllerclem play;
-    [SerializeField] private Text FullInventoryText;
-    // [SerializeField] private Text pickUpText;
-    private Inventory inventory;
     private GameObject inv;
-
     private bool isInRange;
-
-    void Awake()
-    {
-        play = FindObjectOfType<PlayerControllerclem>();
-        inv = GameObject.Find("Inventory");
-        inventory = inv.GetComponent<Inventory>();
-    }
-    private void Update()
-    {
-        if (isInRange && Input.GetKeyDown(KeyCode.E) && item is RessourceItem)
-=======
     private static Inventory inventory;
-    private GameObject inv;
     private static GameObject pickUpText;
     private static GameObject FullInventoryText;
     private float timer = 1;
     public static bool DejaInv = false;
-     
 
-    private bool isInRange;
-
+   
     void Start()
 	{
         if (DejaInv == false)
@@ -58,7 +39,6 @@ public class PickUpItem : MonoBehaviour
 		}
 
         if(isInRange && Input.GetKeyDown(KeyCode.E) && item is RessourceItem)
->>>>>>> 1a4c050957cd9533ebe2dd0691ccf455b23551b6
         {
             inventory.AddRessourceItem(item);
             foreach (Queteobjet v in play.listeQuete)
@@ -67,7 +47,7 @@ public class PickUpItem : MonoBehaviour
                 {
                     Debug.Log("aa)");
                     PlayerControllerclem.incrementation(play, v.indexQuete);
-                    plusplusphil(v );
+                    plusplusphil(v);
                     Debug.Log(v.qG.it.ToString());
                     play.incrementeGoal(v.indexQuete);
 
@@ -80,9 +60,6 @@ public class PickUpItem : MonoBehaviour
         }
         else if (isInRange && Input.GetKeyDown(KeyCode.E) && inventory.IsFull() == false)
         {
-
-            // PickUp();///////////////// mods ici
-
             inventory.AddItem(item);
             Destroy(gameObject);
         }
@@ -103,17 +80,12 @@ public class PickUpItem : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         isInRange = false;
-<<<<<<< HEAD
-        pickUpText.gameObject.SetActive(false);
-        FullInventoryText.gameObject.SetActive(false);
-=======
         pickUpText.SetActive(false);
         FullInventoryText.SetActive(false);
-        
-    }
->>>>>>> 1a4c050957cd9533ebe2dd0691ccf455b23551b6
 
     }
+
+    
     public void plusplusphil(Queteobjet v)
     {
         play.listeQuete[v.indexQuete].qG.currentAmount++;

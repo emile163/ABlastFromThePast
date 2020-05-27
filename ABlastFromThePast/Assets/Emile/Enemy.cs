@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     private PlayerControllerclem player;
     public TypeDeMonstre typeDeMonstre;
-    public int maxHealth;
+    public int maxHealth = 100;
     public int currentHealth;
 
     public GameObject RandomDrop;
@@ -28,7 +28,6 @@ public class Enemy : MonoBehaviour
     {
         player = FindObjectOfType<PlayerControllerclem>();
 
-        maxHealth = 100;
         currentHealth = maxHealth;
 
         inv = GameObject.Find("Inventory");
@@ -37,7 +36,6 @@ public class Enemy : MonoBehaviour
     }
     public void TakeDamage(int damage)
     {
-        Debug.Log("siopejipojsfepojsefpojsf" + damage);
         currentHealth -= damage;
         Instantiate(bloodanim, transform.position, transform.rotation);
 
@@ -49,11 +47,6 @@ public class Enemy : MonoBehaviour
     }
     void Die()
     {
-        ///////////////////////////////////// if (qg.goalType==GoalType.Kill){
-        ///if (qg.mT== mT){
-        ///qG.currentAmount++;
-        ///}}
-        ///
         int verif = 0;
         for (int i = 0; i < player.listeQuete.Count; i++)
         {
@@ -67,13 +60,7 @@ public class Enemy : MonoBehaviour
                 player.incrementeGoal(i);
             }
         }
-
-
-
         }
-
-
-
         Destroy(gameObject);
         me.destroy();
         if (RandomDrop)

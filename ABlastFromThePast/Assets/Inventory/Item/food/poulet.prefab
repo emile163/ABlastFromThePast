@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 163276770289301886}
   - component: {fileID: 36450983259534185}
-  - component: {fileID: 5051343769143102097}
   - component: {fileID: 4880314739418142820}
+  - component: {fileID: 6368412870930497583}
   m_Layer: 0
   m_Name: poulet
   m_TagString: Untagged
@@ -84,19 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5051343769143102097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4929234712278625420}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 5746453a3aab5a64ca8ea19d69cb9366, type: 2}
 --- !u!58 &4880314739418142820
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -113,3 +100,16 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.018421339}
   serializedVersion: 2
   m_Radius: 0.39031333
+--- !u!114 &6368412870930497583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4929234712278625420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8543f9cddeef11459edd9782360f831, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 5746453a3aab5a64ca8ea19d69cb9366, type: 2}

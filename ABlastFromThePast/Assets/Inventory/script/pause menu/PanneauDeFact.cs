@@ -11,10 +11,10 @@ public class PanneauDeFact : MonoBehaviour
 		panneau.SetActive(false);
 	}
 
-	public void OnTriggerEnter2D(Collider2D other)
+	void OnTriggerEnter2D(Collider2D other)
 	{
-		if(Input.GetKeyDown(KeyCode.E))
+		if (Input.GetKeyDown(KeyCode.E))
 			panneau.SetActive(true);
 	}
-        
+
 }

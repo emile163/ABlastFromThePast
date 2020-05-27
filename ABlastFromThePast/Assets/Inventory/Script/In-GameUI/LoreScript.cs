@@ -8,7 +8,7 @@ public class LoreScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
 	{
-		if (Input.GetKeyDown(KeyCode.E))
+		
 			Chart.SetActive(true);
 	}
 }

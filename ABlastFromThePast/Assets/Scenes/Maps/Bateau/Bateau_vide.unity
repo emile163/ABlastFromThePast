@@ -499,6 +499,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &411052870 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3548355853564458382, guid: 9e54ef8a98c1d5a4fa39d5d8f6039a60,
+    type: 3}
+  m_PrefabInstance: {fileID: 1393434285}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &411052872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411052870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8543f9cddeef11459edd9782360f831, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 0cc72e38a75466b41b75cdfb76f7591b, type: 2}
 --- !u!1 &450689834
 GameObject:
   m_ObjectHideFlags: 3
@@ -694,9 +713,8 @@ GameObject:
   m_Component:
   - component: {fileID: 621965619}
   - component: {fileID: 621965618}
-  - component: {fileID: 621965617}
   - component: {fileID: 621965616}
-  - component: {fileID: 621965620}
+  - component: {fileID: 621965617}
   m_Layer: 0
   m_Name: vomit guy
   m_TagString: Untagged
@@ -717,9 +735,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.1349318}
+  m_Offset: {x: 0, y: 0.06977147}
   serializedVersion: 2
-  m_Radius: 0.34506822
+  m_Radius: 0.41032857
 --- !u!114 &621965617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -732,7 +750,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6faa29f35a1527d41883c3203de550ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Chart: {fileID: 0}
+  Chart: {fileID: 613277128}
 --- !u!212 &621965618
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -769,8 +787,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1102780989
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300170, guid: e8f7408de36fedc46a6d83c6ede811bd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -798,19 +816,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &621965620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 621965615}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cb5bfdb3303376468c20b5dfadfda1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panneau: {fileID: 613277128}
 --- !u!1 &624300335
 GameObject:
   m_ObjectHideFlags: 0
@@ -988,7 +993,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5344316bbed12a8489f2f89e570512de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  typeDeMonstre: 0
   maxHealth: 10
+  currentHealth: 0
   RandomDrop: {fileID: 4929234712278625420, guid: 09934753e5b30d94d98961c108294e6c,
     type: 3}
   me: {fileID: 624893732}
@@ -1144,8 +1151,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1102780989
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300134, guid: e8f7408de36fedc46a6d83c6ede811bd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1643,7 +1650,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: "\xC9p\xE9eDeBois"
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3548355853564458383, guid: 9e54ef8a98c1d5a4fa39d5d8f6039a60, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9e54ef8a98c1d5a4fa39d5d8f6039a60, type: 3}
 --- !u!1 &1427449022
 GameObject:
@@ -3448,10 +3456,24 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 888607110, guid: ff8272def56b8e04eb563c3f5e96fec2, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 695584454069146808, guid: ff8272def56b8e04eb563c3f5e96fec2,
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 695584454069146810, guid: ff8272def56b8e04eb563c3f5e96fec2,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1102780989
+      objectReference: {fileID: 0}
+    - target: {fileID: 695584454069146810, guid: ff8272def56b8e04eb563c3f5e96fec2,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 695584454069146811, guid: ff8272def56b8e04eb563c3f5e96fec2,
         type: 3}
@@ -3603,7 +3625,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 621965620}
+      - m_Target: {fileID: 0}
         m_MethodName: fermerPanneau
         m_Mode: 1
         m_Arguments:
