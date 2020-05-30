@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 
 public class Enemy : MonoBehaviour
@@ -8,15 +9,18 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     private PlayerControllerclem player;
     public TypeDeMonstre typeDeMonstre;
-    public int maxHealth = 100;
-    public int currentHealth;
+    public float maxHealth = 100f;
+    public float currentHealth;
 
-    public GameObject RandomDrop;
     public movingennemy me;
     private Inventory inventory;
     private GameObject inv;
     private GameObject pickUpText;
     private GameObject FullInventoryText;
+    public GameObject[] RandomDrop;
+    public int numberOfDrop = 1;
+    private Vector3 dorp;
+
     /// <summary>
     /// /////////////////// public MonsterType mT;
     /// /////////////////// public QueteGoal qG;
@@ -26,6 +30,7 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
+        
         player = FindObjectOfType<PlayerControllerclem>();
 
         currentHealth = maxHealth;
@@ -34,10 +39,11 @@ public class Enemy : MonoBehaviour
         inventory = inv.GetComponent<Inventory>();
 
     }
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         currentHealth -= damage;
-        Instantiate(bloodanim, transform.position, transform.rotation);
+        if(bloodanim != null)
+            Instantiate(bloodanim, transform.position, transform.rotation);
 
         if (currentHealth <= 0) {
             inv.SetActive(true);
@@ -55,18 +61,41 @@ public class Enemy : MonoBehaviour
             if (player.listeQuete[i].isActive && player.listeQuete[i].qG.mT.Equals(this.typeDeMonstre))
             {
 
-                player.moveSpeed++;
                 Debug.Log((player.listeQuete[i].isActive && player.listeQuete[i].qG.Equals(this.typeDeMonstre)).ToString());
                 player.incrementeGoal(i);
             }
         }
         }
         Destroy(gameObject);
-        me.destroy();
-        if (RandomDrop)
+        if(me!=null)
+           me.destroy();
+        if (RandomDrop != null)
         {
-            Instantiate(RandomDrop, transform.position, transform.rotation);
-            
+			for (int i = 0; i < numberOfDrop; i++)
+			{
+                if(i == 0)
+				{
+                    dorp = transform.position;
+				}
+                if(i == 1)
+				{
+                    dorp = transform.position + new Vector3(0.3f, 0.3f);
+                }
+                if (i == 2)
+                {
+                    dorp = transform.position + new Vector3(-0.3f, 0.3f);
+                }
+                if (i == 3)
+                {
+                    dorp = transform.position + new Vector3(0.3f, -0.3f);
+                }
+                if (i == 4)
+                {
+                    dorp = transform.position + new Vector3(-0.3f, -0.3f);
+                }
+
+                Instantiate(RandomDrop[UnityEngine.Random.Range(0, RandomDrop.Length)], dorp, transform.rotation);
+            }
         }
     }
 

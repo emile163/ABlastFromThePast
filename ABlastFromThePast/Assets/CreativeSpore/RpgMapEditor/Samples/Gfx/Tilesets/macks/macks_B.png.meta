@@ -8,6 +8,39 @@ TextureImporter:
   - first:
       213: 1086613375938727121
     second: macks_B_0
+  - first:
+      213: 7357065513241452848
+    second: macks_B_1
+  - first:
+      213: -7390183947844153292
+    second: macks_B_2
+  - first:
+      213: 317731264801745921
+    second: macks_B_3
+  - first:
+      213: -8799765800371666859
+    second: macks_B_4
+  - first:
+      213: 9074613977312079202
+    second: macks_B_5
+  - first:
+      213: -524866244548263436
+    second: macks_B_6
+  - first:
+      213: 280042407848441030
+    second: macks_B_7
+  - first:
+      213: -2828517457632542604
+    second: macks_B_8
+  - first:
+      213: -5362545826271222534
+    second: macks_B_9
+  - first:
+      213: 481891225246098098
+    second: macks_B_10
+  - first:
+      213: -3792430603337675071
+    second: macks_B_11
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -100,7 +133,7 @@ TextureImporter:
         width: 29
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -108,6 +141,237 @@ TextureImporter:
       bones: []
       spriteID: 1dc0409bb1d641f00800000000000000
       internalID: 1086613375938727121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macks_B_1
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 47
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 031a80ada1c891660800000000000000
+      internalID: 7357065513241452848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macks_B_2
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 47
+        width: 16
+        height: 17
+      alignment: 9
+      pivot: {x: 0.49999905, y: 0.50000066}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43094f3badac07990800000000000000
+      internalID: -7390183947844153292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macks_B_3
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 47
+        width: 16
+        height: 17
+      alignment: 9
+      pivot: {x: 0.49999905, y: 0.50000066}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c2b84e6eec86400800000000000000
+      internalID: 317731264801745921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macks_B_4
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 48
+        width: 16
+        height: 17
+      alignment: 9
+      pivot: {x: 0.49999905, y: 0.50000066}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5504732b0a3f0e580800000000000000
+      internalID: -8799765800371666859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macks_B_5
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 30
+        width: 16
+        height: 17
+      alignment: 9
+      pivot: {x: 0.49999905, y: 0.50000066}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d2b7f35518fed70800000000000000
+      internalID: 9074613977312079202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macks_B_6
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 31
+        width: 16
+        height: 17
+      alignment: 9
+      pivot: {x: 0.49999905, y: 0.50000066}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f18b137eec47b8f0800000000000000
+      internalID: -524866244548263436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macks_B_7
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 17
+        width: 16
+        height: 14
+      alignment: 9
+      pivot: {x: 0.49999905, y: 0.50000066}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c4f9d11619e2e300800000000000000
+      internalID: 280042407848441030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macks_B_8
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 18
+        width: 16
+        height: 14
+      alignment: 9
+      pivot: {x: 0.49999905, y: 0.50000066}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47042d0cb561fb8d0800000000000000
+      internalID: -2828517457632542604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macks_B_9
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 18
+        width: 16
+        height: 14
+      alignment: 9
+      pivot: {x: 0.49999905, y: 0.50000066}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4a955abf86495b0800000000000000
+      internalID: -5362545826271222534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macks_B_10
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 96
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b2eb25248500b600800000000000000
+      internalID: 481891225246098098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macks_B_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ceccbc95749e5bc0800000000000000
+      internalID: -3792430603337675071
       vertices: []
       indices: 
       edges: []

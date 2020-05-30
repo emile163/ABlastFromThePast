@@ -20,4 +20,11 @@ public class SceneChange : MonoBehaviour
 		
 		inv.gameObject.SetActive(true);
 	}	
+
+	public void ChangeSceneCutScene()
+	{
+		SceneManager.LoadScene(sceneBuildIndex: scene);
+
+		inv.gameObject.SetActive(true);
+	}
 }

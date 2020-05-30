@@ -113,7 +113,7 @@ public class PlayerSmg : MonoBehaviour
         }
     }
 
-    public void AjouterArmure(int _armure)
+    public void AjouterArmure(float _armure)
 	{
         tempArmure = armureMax - currentArmure;
         armureMax = _armure;
@@ -121,7 +121,7 @@ public class PlayerSmg : MonoBehaviour
         ab.SetMaxArmure(armureMax, currentArmure);
     }
 
-    public void EnleverArmure(int _armure)
+    public void EnleverArmure(float _armure)
 	{
         tempArmure = armureMax - currentArmure; //dmg done
         if (armureMax - _armure < tempArmure)

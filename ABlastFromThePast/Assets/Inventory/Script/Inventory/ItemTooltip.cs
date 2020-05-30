@@ -21,6 +21,16 @@ public class ItemTooltip : MonoBehaviour
         gameObject.SetActive(true);
     }
 
+    public void ShowTooltipEatableItem(EatableItem item)
+	{
+        nomItem.text = item.itemName;
+        Description.text = item.itemDes;
+        nomStat.text = "Vie donée:";
+        ChiffreStat.text = item.healingDone.ToString();
+        typeDitem.text = null;
+        gameObject.SetActive(true);
+    }
+
     public void ShowTooltipItem(Item item)
     {
         nomItem.text = item.itemName;

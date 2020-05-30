@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ceb81e7f28a3f94d8412574acb0b83c, type: 3}
+  m_Name: choux
+  m_EditorClassIdentifier: 
+  iT: 0
+  itemName: choux
+  itemDes: "Le choux est un aliment tr\xE8s pr\xE9sent dans l'agriculture \xE0 cause
+    de la facilit\xE9 de le cultiver."
+  itemSprite: {fileID: 317731264801745921, guid: ee223091319680444bdd654cbfa5d144,
+    type: 3}
+  healingDone: 15

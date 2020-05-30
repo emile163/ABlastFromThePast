@@ -10,12 +10,14 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] EquipmentPanel equipmentPanel;
     [SerializeField] Text AttackDisplay;
     [SerializeField] Text DeffenceDisplay;
-    private int Healing;
-    private int AttaquePersonnageEnPlus;
-    private int DefencPersonnage;
+    private float Healing;
+    private float AttaquePersonnageEnPlus;
+    private float DefencPersonnage;
+    private float speed;
     private EatableItem EI;
     private PlayerSmg player;
     private PlayerCombat mmplayer;
+    private PlayerControllerclem pcm;
     private GameObject pla;
 
     private void Awake()
@@ -23,6 +25,7 @@ public class InventoryManager : MonoBehaviour
         pla = GameObject.FindWithTag("Player");
         player = pla.GetComponent<PlayerSmg>();
         mmplayer = pla.GetComponent<PlayerCombat>();
+        pcm = player.GetComponent<PlayerControllerclem>();
         inventory.OnItemRightClickedEvent += EquipFromInventory;
         equipmentPanel.OnItemRightClickedEvent += UnequipFromEquipmentPanel;
     }
@@ -42,6 +45,8 @@ public class InventoryManager : MonoBehaviour
             AttaquePersonnageEnPlus = 10 + equipmentPanel.Nombreattaque();
             AttackDisplay.text = AttaquePersonnageEnPlus.ToString();
             mmplayer.SetAttaque(AttaquePersonnageEnPlus);
+            speed = equipmentPanel.nombreDeSpeed();
+            pcm.SetSpeed(speed);
 
             DefencPersonnage = equipmentPanel.NombreDefence();
             DeffenceDisplay.text = DefencPersonnage.ToString();
@@ -55,6 +60,9 @@ public class InventoryManager : MonoBehaviour
             Unequip((EquipableItem)item);
             AttaquePersonnageEnPlus = 10 + equipmentPanel.Nombreattaque();
             AttackDisplay.text = AttaquePersonnageEnPlus.ToString();
+            mmplayer.SetAttaque(AttaquePersonnageEnPlus);
+            speed = equipmentPanel.nombreDeSpeed();
+            pcm.SetSpeed(speed);
 
             DefencPersonnage = equipmentPanel.NombreDefence();
             DeffenceDisplay.text = DefencPersonnage.ToString();

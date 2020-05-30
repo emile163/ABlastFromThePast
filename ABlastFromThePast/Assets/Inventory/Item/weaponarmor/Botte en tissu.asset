@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1852838ef3f7ad14db90172e635458ca, type: 3}
+  m_Name: Botte en tissu
+  m_EditorClassIdentifier: 
+  iT: 0
+  itemName: Botte en tissu
+  itemDes: "Botte ultra l\xE9g\xE8re."
+  itemSprite: {fileID: 21300000, guid: 4b03fcb2dea8ed44e903982f7e49cf1f, type: 3}
+  NomStat: 2
+  stat: 0.225
+  EquipmentType: 2

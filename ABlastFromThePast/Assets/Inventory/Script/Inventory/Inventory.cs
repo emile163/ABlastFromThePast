@@ -99,6 +99,23 @@ public class Inventory : MonoBehaviour
         
     }
 
+    public void AddEatableItem(Item item)
+	{
+        for (int i = 0; i < items.Count; i++)
+        {
+            if (items[i].itemName == item.itemName && item is EatableItem)
+            {
+                itemSlots[i].nombreDeRessource++;
+                PeuStack = true;
+            }
+        }
+
+        if (PeuStack == false)
+        {
+            AddItem(item);
+        }
+    }
+
 public ItemSlot[] GetItemSlots()
     {
         return itemSlots;

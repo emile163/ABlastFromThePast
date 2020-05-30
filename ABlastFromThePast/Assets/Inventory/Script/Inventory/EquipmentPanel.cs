@@ -7,8 +7,9 @@ public class EquipmentPanel : MonoBehaviour
 {
     [SerializeField] Transform equipmentSlotsParent;
     [SerializeField] EquipmentSlot[] equipmentSlots;
-    private int AttaquePersonnage = 0;
-    private int DefencPersonnage = 0;
+    private float AttaquePersonnage = 0;
+    private float DefencPersonnage = 0;
+    private float pourcentagespeed = 0;
     private Item Litem;
     private EquipableItem EI;
 
@@ -55,7 +56,7 @@ public class EquipmentPanel : MonoBehaviour
         return false;
     }
     
-    public int Nombreattaque()
+    public float Nombreattaque()
     {
         AttaquePersonnage = 0;
         for (int i = 0; i < equipmentSlots.Length; i++)
@@ -73,7 +74,7 @@ public class EquipmentPanel : MonoBehaviour
         return AttaquePersonnage;
     }
 
-    public int NombreDefence()
+    public float NombreDefence()
     {
         DefencPersonnage = 0;
         for (int i = 0; i < equipmentSlots.Length; i++)
@@ -91,5 +92,24 @@ public class EquipmentPanel : MonoBehaviour
         }
         return DefencPersonnage;
     }
-    
+
+    public float nombreDeSpeed()
+    {
+        pourcentagespeed = 0;
+        for (int i = 0; i < equipmentSlots.Length; i++)
+        {
+            if (equipmentSlots[i] != null)
+            {
+                Litem = equipmentSlots[i]._item;
+                EI = (EquipableItem)Litem;
+                if (EI != null && EI.NomStat == NomStat.PourcentageDeVitesseDePlus)
+                {
+                    pourcentagespeed = EI.stat;
+                }
+
+            }
+        }
+        return pourcentagespeed;
+    }
+
 }

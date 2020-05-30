@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72bd0dfe15760d24689c2a1bff45059a, type: 3}
+  m_Name: Fourrure
+  m_EditorClassIdentifier: 
+  iT: 0
+  itemName: fourrure
+  itemDes: "Le commerce des fourrures, principalement de castor, \xE9tait l'activit\xE9
+    \xE9conomique la plus importante pour les Am\xE9rindiens et les premiers colons."
+  itemSprite: {fileID: 4852018403143962471, guid: 04654a9413b420e4681fcb3acaba09b9,
+    type: 3}

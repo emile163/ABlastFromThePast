@@ -31,7 +31,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandle
         if (_item!=null && _item is EquipableItem || _item is RessourceItem || _item is EatableItem)
         {
             button.SetActive(true);
-        } else if(_item == null)
+        } else 
         {
             button.SetActive(false);
         }
@@ -91,7 +91,12 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandle
         if(Item is EquipableItem)
         {
             tooltip.ShowTooltipEquipableItem((EquipableItem)Item);
-        } else if(Item is Item)
+        } else if(Item is EatableItem)
+		{
+            tooltip.ShowTooltipEatableItem((EatableItem)Item);
+
+        }
+        else if(Item is Item)
         {
             tooltip.ShowTooltipItem(Item);
         }

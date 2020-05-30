@@ -15,13 +15,13 @@ public enum NomStat
 {
     Attaque,
     Defence,
-    Autre,
+    PourcentageDeVitesseDePlus,
 }
 
 [CreateAssetMenu]
 public class EquipableItem : Item
 {
     public NomStat NomStat;
-    public int stat;
+    public float stat;
     public EquipmentType EquipmentType;
 }

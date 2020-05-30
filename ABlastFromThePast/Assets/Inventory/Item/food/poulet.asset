@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ceb81e7f28a3f94d8412574acb0b83c, type: 3}
   m_Name: poulet
   m_EditorClassIdentifier: 
+  iT: 0
   itemName: Poulet
   itemDes: Il y a environ 23 milliards de poulet dans le monde
   itemSprite: {fileID: 4643794427410649453, guid: 04654a9413b420e4681fcb3acaba09b9,
     type: 3}
-  healingDone: 20
+  healingDone: 35

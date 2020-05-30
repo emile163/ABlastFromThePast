@@ -7,7 +7,8 @@ public class PickUpItem : MonoBehaviour
 {
     
     public Item item;
-    private PlayerControllerclem play;
+    private static PlayerControllerclem pla;
+    private GameObject player;
     private GameObject inv;
     private bool isInRange;
     private static Inventory inventory;
@@ -19,6 +20,9 @@ public class PickUpItem : MonoBehaviour
    
     void Start()
 	{
+        player = GameObject.Find("Player");
+        pla = player.GetComponent<PlayerControllerclem>();
+
         if (DejaInv == false)
         {
             FullInventoryText = GameObject.Find("InventaireRempli");
@@ -41,22 +45,29 @@ public class PickUpItem : MonoBehaviour
         if(isInRange && Input.GetKeyDown(KeyCode.E) && item is RessourceItem)
         {
             inventory.AddRessourceItem(item);
-            foreach (Queteobjet v in play.listeQuete)
+            if (pla.listeQuete != null)
             {
-                if (v.isActive && v.qG.it.Equals(item.iT))
+                foreach (Queteobjet v in pla.listeQuete)
                 {
-                    Debug.Log("aa)");
-                    PlayerControllerclem.incrementation(play, v.indexQuete);
-                    plusplusphil(v);
-                    Debug.Log(v.qG.it.ToString());
-                    play.incrementeGoal(v.indexQuete);
+                    if (v.isActive && v.qG.it.Equals(item.iT))
+                    {
+                        Debug.Log("aa)");
+                        PlayerControllerclem.incrementation(pla, v.indexQuete);
+                        plusplusphil(v);
+                        Debug.Log(v.qG.it.ToString());
+                        pla.incrementeGoal(v.indexQuete);
+
+                    }
 
                 }
-
             }
-
+            
             Destroy(gameObject);
 
+        } else if(isInRange && Input.GetKeyDown(KeyCode.E) && item is EatableItem)
+		{
+            inventory.AddEatableItem(item);
+            Destroy(gameObject);
         }
         else if (isInRange && Input.GetKeyDown(KeyCode.E) && inventory.IsFull() == false)
         {
@@ -88,7 +99,7 @@ public class PickUpItem : MonoBehaviour
     
     public void plusplusphil(Queteobjet v)
     {
-        play.listeQuete[v.indexQuete].qG.currentAmount++;
+        pla.listeQuete[v.indexQuete].qG.currentAmount++;
     }
     
 }

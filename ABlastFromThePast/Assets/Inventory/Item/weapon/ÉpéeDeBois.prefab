@@ -93,13 +93,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3548355853564458382}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b37bff0205b58cf49ade48dca3da894a, type: 3}
+  m_Script: {fileID: 11500000, guid: c8543f9cddeef11459edd9782360f831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpText: {fileID: 0}
   item: {fileID: 11400000, guid: 0cc72e38a75466b41b75cdfb76f7591b, type: 2}
-  FullInventoryText: {fileID: 0}
-  inventory: {fileID: 0}
 --- !u!58 &3548355853564458354
 CircleCollider2D:
   m_ObjectHideFlags: 0
