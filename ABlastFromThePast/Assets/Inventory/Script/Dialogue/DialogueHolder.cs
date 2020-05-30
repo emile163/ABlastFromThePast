@@ -37,7 +37,7 @@ public class DialogueHolder : MonoBehaviour
     {
         Edown = Input.GetKeyDown(KeyCode.E);
         checkDistance(questGiver.player);
-        ;
+        
         {
             if (Input.GetKeyDown(KeyCode.E) && checkDistance(questGiver.player))
             {
@@ -173,8 +173,6 @@ public class DialogueHolder : MonoBehaviour
             return true;
 
         }
-
-
         return false ;
     }
 }

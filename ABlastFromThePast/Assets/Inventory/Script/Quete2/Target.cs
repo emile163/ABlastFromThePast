@@ -20,7 +20,7 @@ public class Target : MonoBehaviour
     private void Update()
     {
 
-        if (timer )
+        if (timer)
         {
             pnjFin.gameObject.SetActive(false);
             timer = false;
@@ -30,11 +30,8 @@ public class Target : MonoBehaviour
         if (bc2.IsTouching(questGiver.player.GetComponent<Collider2D>()) && !cond  )
         {
             DialogueHolder dhold = pnjDebut.GetComponentInChildren<DialogueHolder>();
-            Debug.Log(   pnjDebut.GetComponentInChildren<DialogueHolder>().QuestIndex);
-            //Debug.Log("EMILE SUCE DES BATS");
           if (questGiver.quetes[dhold.QuestIndex].isActive)
             {
-                
                 quete = questGiver.quetes[dhold.QuestIndex];
                 questGiver.quetes[quete.indexQuete].questEnded = true;
 
@@ -43,10 +40,9 @@ public class Target : MonoBehaviour
                 pnjFin.gameObject.SetActive(true);
                 
                 dhold.canTalk = false;
-                questGiver.quetes[quete.indexQuete].questEnded = true;
+                //questGiver.quetes[quete.indexQuete].questEnded = true;
                 questGiver.OpenQuestWindow(dhold.QuestIndex);
                 
-              //  dholdf.canTalk = true;
             }   
         }
     }

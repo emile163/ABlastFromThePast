@@ -353,6 +353,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1805087148045828064, guid: b0e1be4f05762554db9efe96ee9e60dc,
+        type: 3}
+      propertyPath: m_Name
+      value: CaracterPanel
+      objectReference: {fileID: 0}
     - target: {fileID: 1805087148051593909, guid: b0e1be4f05762554db9efe96ee9e60dc,
         type: 3}
       propertyPath: m_AnchorMin.y

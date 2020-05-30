@@ -7,14 +7,16 @@ using UnityEngine;
     public class PlayerControllerclem : MonoBehaviour
     {
 
-        private static float moveSpeed = 2f;
-        private Animator anim;
-        private bool playerMoving;
-        private Vector2 lastMove;
-        public List<Queteobjet> listeQuete;
+     private static float moveSpeed = 2f;
+     private Animator anim;
+     private bool playerMoving;
+     private Vector2 lastMove;
+     public List<Queteobjet> listeQuete;
+     public QuestGiver quests;
 
         void Start() {
-            anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
+        //listeQuete = quests.GiveQuests();
         }
 
         void Update() {
@@ -47,7 +49,7 @@ using UnityEngine;
 
     public void incrementeGoal(int i)
     {
-        this.listeQuete[i].qG.currentAmount++;
+        listeQuete[i].qG.currentAmount++;
     }
 
     public void SetSpeed(float speedmultiplier)

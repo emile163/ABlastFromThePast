@@ -42,15 +42,7 @@ public class InventoryManager : MonoBehaviour
         if(item is EquipableItem)
         {
             Equip((EquipableItem)item);
-            AttaquePersonnageEnPlus = 10 + equipmentPanel.Nombreattaque();
-            AttackDisplay.text = AttaquePersonnageEnPlus.ToString();
-            mmplayer.SetAttaque(AttaquePersonnageEnPlus);
-            speed = equipmentPanel.nombreDeSpeed();
-            pcm.SetSpeed(speed);
-
-            DefencPersonnage = equipmentPanel.NombreDefence();
-            DeffenceDisplay.text = DefencPersonnage.ToString();
-            player.AjouterArmure(DefencPersonnage);
+            checkStat();
         }
     }
     private void UnequipFromEquipmentPanel(Item item)
@@ -58,16 +50,21 @@ public class InventoryManager : MonoBehaviour
         if(item is EquipableItem)
         {
             Unequip((EquipableItem)item);
-            AttaquePersonnageEnPlus = 10 + equipmentPanel.Nombreattaque();
-            AttackDisplay.text = AttaquePersonnageEnPlus.ToString();
-            mmplayer.SetAttaque(AttaquePersonnageEnPlus);
-            speed = equipmentPanel.nombreDeSpeed();
-            pcm.SetSpeed(speed);
-
-            DefencPersonnage = equipmentPanel.NombreDefence();
-            DeffenceDisplay.text = DefencPersonnage.ToString();
-            player.EnleverArmure(DefencPersonnage);
+            checkStat();
         }
+    }
+
+    public void checkStat()
+	{
+        AttaquePersonnageEnPlus = 10 + equipmentPanel.Nombreattaque();
+        AttackDisplay.text = AttaquePersonnageEnPlus.ToString();
+        mmplayer.SetAttaque(AttaquePersonnageEnPlus);
+        speed = equipmentPanel.nombreDeSpeed();
+        pcm.SetSpeed(speed);
+
+        DefencPersonnage = equipmentPanel.NombreDefence();
+        DeffenceDisplay.text = DefencPersonnage.ToString();
+        player.EnleverArmure(DefencPersonnage);
     }
 
 

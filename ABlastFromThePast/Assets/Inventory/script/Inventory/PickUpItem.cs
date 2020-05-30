@@ -16,13 +16,14 @@ public class PickUpItem : MonoBehaviour
     private static GameObject FullInventoryText;
     private float timer = 1;
     public static bool DejaInv = false;
+    private bool unfois = false;
 
    
     void Start()
 	{
         player = GameObject.Find("Player");
         pla = player.GetComponent<PlayerControllerclem>();
-    play = FindObjectOfType<PlayerControllerclem>();
+
         if (DejaInv == false)
         {
             
@@ -49,25 +50,15 @@ public class PickUpItem : MonoBehaviour
             inventory.AddRessourceItem(item);
             if (pla.listeQuete != null)
             {
+                unfois = false;
                 foreach (Queteobjet v in pla.listeQuete)
                 {
-                    if (v.isActive && v.qG.it.Equals(item.iT))
+                    if (v.isActive && v.qG.it.Equals(item.iT) && unfois == false)
                     {
-                        Debug.Log("aa)");
-                        PlayerControllerclem.incrementation(pla, v.indexQuete);
-                        plusplusphil(v);
                         Debug.Log(v.qG.it.ToString());
+                        Debug.Log(v.indexQuete.ToString());
                         pla.incrementeGoal(v.indexQuete);
-
-                    }
-                    Debug.Log("aa)");
-                    // PlayerControllerclem.incrementation(play, play.listeQuete.IndexOf(v));
-                    //  plusplusphil(v);
-                    if (v.qG.goalType.Equals(GoalType.Gathering) || v.qG.goalType.Equals(GoalType.Give))
-                    {
-                        Debug.Log(v.qG.it.ToString());
-                        play.incrementeGoal(play.listeQuete.IndexOf(v));
-
+                        unfois = true;
                     }
                 }
 

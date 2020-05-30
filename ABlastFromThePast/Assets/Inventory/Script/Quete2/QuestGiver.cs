@@ -19,6 +19,7 @@ public class QuestGiver : MonoBehaviour
     public List<Queteobjet> quetes;
     public Button acepterQuete;
     public Button giveThings;
+    private List<Item> itemSlots;
     /// <summary>
 
     /// </summary>
@@ -27,8 +28,13 @@ public class QuestGiver : MonoBehaviour
     {
         dhold = FindObjectsOfType<DialogueHolder>();
         inv = FindObjectOfType<Inventory>();
+        itemSlots = inv.GetListItem();
     }
    
+    public List<Queteobjet> GiveQuests()
+	{
+        return quetes;
+    }
 
     public void OpenQuestWindow()
     {
@@ -59,6 +65,7 @@ public class QuestGiver : MonoBehaviour
                 acepterQuete.gameObject.SetActive(true);
                 recevoir.gameObject.SetActive(false);
                 complétion.gameObject.SetActive(false);
+                Debug.Log("hey");
 
             }
             if (quete.questEnded && quete.isActive )
@@ -70,10 +77,6 @@ public class QuestGiver : MonoBehaviour
                 complétion.gameObject.SetActive(false);
 
             }
-
-             
-            
-            
             
             if (quete.qG.goalType.Equals(GoalType.Give) && quete.isActive && !quete.questEnded)
             {
@@ -155,18 +158,6 @@ public class QuestGiver : MonoBehaviour
     }
     public void AccepterQuete()
     {
-        string e="";
-        string j = "";
-
-
-        Debug.Log(e);
-        Debug.Log(j);
-
-
-
-
-
-
         //debug.Log("nombre de dhold" + dhold.Length + " index de la quete" + quete.indexQuete + "index du DHOLD" + dhold[quete.indexQuete].QuestIndex); ;
 
         questWindow.SetActive(false);
@@ -186,9 +177,8 @@ public class QuestGiver : MonoBehaviour
     }
     public void EndQuest()
     {
-
+        
         quete = quetes[identifierQuete(-1)];
-
         quete.questEnded = true;
         //debug.Log("nombre de dhold" + dhold.Length + " index de la quete" + quete.indexQuete + "index du DHOLD" + dhold[quete.indexQuete].QuestIndex); ;
         dhold[quete.indexQuete].setDialFinDeQuete();
@@ -214,7 +204,7 @@ public class QuestGiver : MonoBehaviour
         //debug.Log("nombre de dhold" + dhold.Length + " index de la quete" + quete.indexQuete + "index du DHOLD" + dhold[quete.indexQuete].QuestIndex); ;
         dhold[quete.indexQuete].setDialFinDeQuete();
         quete.isActive = false;
-        player.listeQuete.Remove(quete);
+        //player.listeQuete.Remove(quete);
 
     }
 
@@ -224,7 +214,13 @@ public class QuestGiver : MonoBehaviour
         foreach (Item i in quetes[identifierQuete(-1)].rewards) {
             inv.AddItem(i);
         }
-
+       /* if(quete.qG.goalType == goalType.Gathering)
+		{
+			for (int i = 0; i < itemSlots.Length; i++)
+			{
+                if(itemSlots[i].)
+			}
+		}*/
 
         EndQuest();
     }
@@ -335,26 +331,6 @@ public class QuestGiver : MonoBehaviour
             
             }
 
-        
-        
-        
-
-        
-   
-                
-
-
-
-
-
-
-
-
-
-
-        
-    
-
     public int hasItem()
     {
         int iQ;
@@ -369,14 +345,6 @@ public class QuestGiver : MonoBehaviour
                 {
                     iQ = inv.GetListItem().IndexOf(i);
                     return iQ;
-
-                    
-
-                    
-
-
-
-
                 }
 
             }

@@ -11,10 +11,8 @@ public class Enemy : MonoBehaviour
     private PlayerControllerclem player;
     public TypeDeMonstre typeDeMonstre;
     public float maxHealth = 100f;
-    public float currentHealth;
+    private float currentHealth;
 
-    public movingennemy me;
-    public GameObject RandomDrop;
     public movingennemy me=new movingennemy();
     private Inventory inventory;
     private GameObject inv;
@@ -59,17 +57,13 @@ public class Enemy : MonoBehaviour
         int verif = 0;
         for (int i = 0; i < player.listeQuete.Count; i++)
         {
-            Debug.Log(player.listeQuete[i].qG.goalType.Equals(GoalType.Kill));
-            Debug.Log(player.listeQuete[i].qG.goalType.ToString());
-            if (player.listeQuete[i].qG.goalType.Equals(GoalType.Kill)) { 
-            Debug.Log("type de monstre tué :" + this.typeDeMonstre + "type de monstre attendu :" + player.listeQuete[i].qG.mT);
-            if (player.listeQuete[i].isActive && player.listeQuete[i].qG.mT.Equals(this.typeDeMonstre))
-            {
-
-                Debug.Log((player.listeQuete[i].isActive && player.listeQuete[i].qG.Equals(this.typeDeMonstre)).ToString());
-                player.incrementeGoal( i);
+            if (player.listeQuete[i].qG.goalType.Equals(GoalType.Kill)) 
+            { 
+                if (player.listeQuete[i].isActive && player.listeQuete[i].qG.mT.Equals(this.typeDeMonstre))
+                {
+                    player.incrementeGoal(i);
+                }
             }
-        }
         }
         Destroy(gameObject);
         if(me!=null)
@@ -120,6 +114,7 @@ public enum TypeDeMonstre
     None,
     Vache,
     Ours,
+    Poulet,
     Clement,
     Mémille
         

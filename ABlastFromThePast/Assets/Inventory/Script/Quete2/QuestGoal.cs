@@ -13,8 +13,9 @@ public class QuestGoal
     public int currentAmount=0;
     private bool completed;
     public string itemName;
-public bool IsReached()
-{ 
+
+    public bool IsReached()
+    { 
         if (!completed && !this.goalType.Equals(GoalType.Explore))
         {
             if (currentAmount >= requiredAmount)
@@ -25,12 +26,11 @@ public bool IsReached()
             else return false;
         }
         else return true;
-}
-public int Atteint(Queteobjet quest )
-{
-if (quest.qG.IsReached())
+    }
+    public int Atteint(Queteobjet quest )
     {
-
+    if (quest.qG.IsReached())
+    {
         return quest.indexQuete; 
     }else return -1;
     }
@@ -40,15 +40,15 @@ if (quest.qG.IsReached())
 
 
 
-public enum GoalType
+    public enum GoalType
  
-{
+    {
     Kill,
     Gathering,
     Explore,
     Give
 
     
-}
+    }
 
 

@@ -12,11 +12,20 @@ public class EquipmentPanel : MonoBehaviour
     private float pourcentagespeed = 0;
     private Item Litem;
     private EquipableItem EI;
+    private GameObject inv;
+    private static InventoryManager inventory;
+    public static bool DejaInv = false;
 
     public event Action<Item> OnItemRightClickedEvent;
 
     private void Start()
     {
+        if (DejaInv == false)
+        {
+            inv = GameObject.Find("CaracterPanel");
+            inventory = inv.GetComponent<InventoryManager>();
+            DejaInv = true;
+        }
         for (int i = 0; i < equipmentSlots.Length; i++)
         {
             equipmentSlots[i].OnRightClickEvent += OnItemRightClickedEvent;
@@ -50,6 +59,7 @@ public class EquipmentPanel : MonoBehaviour
             if (equipmentSlots[i].Item == item)
             {
                 equipmentSlots[i].Item = null;
+                inventory.checkStat();
                 return true;
             }
         }
