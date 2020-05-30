@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,7 +13,7 @@ public class Enemy : MonoBehaviour
     public int currentHealth;
 
     public GameObject RandomDrop;
-    public movingennemy me;
+    public movingennemy me=new movingennemy();
     private Inventory inventory;
     private GameObject inv;
     private GameObject pickUpText;
@@ -50,19 +51,23 @@ public class Enemy : MonoBehaviour
         int verif = 0;
         for (int i = 0; i < player.listeQuete.Count; i++)
         {
-            if (player.listeQuete[i].qG.Equals(GoalType.Kill)) { 
+            Debug.Log(player.listeQuete[i].qG.goalType.Equals(GoalType.Kill));
+            Debug.Log(player.listeQuete[i].qG.goalType.ToString());
+            if (player.listeQuete[i].qG.goalType.Equals(GoalType.Kill)) { 
             Debug.Log("type de monstre tué :" + this.typeDeMonstre + "type de monstre attendu :" + player.listeQuete[i].qG.mT);
             if (player.listeQuete[i].isActive && player.listeQuete[i].qG.mT.Equals(this.typeDeMonstre))
             {
 
-                player.moveSpeed++;
                 Debug.Log((player.listeQuete[i].isActive && player.listeQuete[i].qG.Equals(this.typeDeMonstre)).ToString());
-                player.incrementeGoal(i);
+                player.incrementeGoal( i);
             }
         }
         }
         Destroy(gameObject);
-        me.destroy();
+        try
+        {
+            me.destroy();
+        }catch (Exception e) { }
         if (RandomDrop)
         {
             Instantiate(RandomDrop, transform.position, transform.rotation);

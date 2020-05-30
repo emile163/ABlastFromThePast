@@ -49,8 +49,7 @@ using UnityEngine;
 
     public void incrementeGoal(int i)
     {
-        this.listeQuete[i].qG.
-            currentAmount++;
+        this.listeQuete[i].qG.currentAmount++;
     }
     }
     

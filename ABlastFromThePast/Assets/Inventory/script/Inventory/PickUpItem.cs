@@ -19,14 +19,17 @@ public class PickUpItem : MonoBehaviour
    
     void Start()
 	{
+    play = FindObjectOfType<PlayerControllerclem>();
         if (DejaInv == false)
         {
+            
             FullInventoryText = GameObject.Find("InventaireRempli");
             pickUpText = GameObject.Find("PickUpText");
             inv = GameObject.Find("Inventory");
             inventory = inv.GetComponent<Inventory>();
             DejaInv = true;
         }
+
 	}
 
     private void Update()
@@ -46,11 +49,14 @@ public class PickUpItem : MonoBehaviour
                 if (v.isActive && v.qG.it.Equals(item.iT))
                 {
                     Debug.Log("aa)");
-                    PlayerControllerclem.incrementation(play, v.indexQuete);
-                    plusplusphil(v);
-                    Debug.Log(v.qG.it.ToString());
-                    play.incrementeGoal(v.indexQuete);
+                    // PlayerControllerclem.incrementation(play, play.listeQuete.IndexOf(v));
+                    //  plusplusphil(v);
+                    if (v.qG.goalType.Equals(GoalType.Gathering) || v.qG.goalType.Equals(GoalType.Give))
+                    {
+                        Debug.Log(v.qG.it.ToString());
+                        play.incrementeGoal(play.listeQuete.IndexOf(v));
 
+                    }
                 }
 
             }
