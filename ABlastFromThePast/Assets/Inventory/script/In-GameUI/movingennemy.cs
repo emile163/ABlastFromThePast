@@ -48,9 +48,9 @@ public class movingennemy : MonoBehaviour
 
     public void destroy()
 	{
-        Destroy(gameObject);
+        
         mAnimator.SetBool("goingRight", false);
         mAnimator.SetBool("GoingLeft", false);
-
+        Destroy(this);
     }
 }

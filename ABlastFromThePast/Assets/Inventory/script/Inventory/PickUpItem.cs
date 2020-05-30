@@ -22,15 +22,17 @@ public class PickUpItem : MonoBehaviour
 	{
         player = GameObject.Find("Player");
         pla = player.GetComponent<PlayerControllerclem>();
-
+    play = FindObjectOfType<PlayerControllerclem>();
         if (DejaInv == false)
         {
+            
             FullInventoryText = GameObject.Find("InventaireRempli");
             pickUpText = GameObject.Find("PickUpText");
             inv = GameObject.Find("Inventory");
             inventory = inv.GetComponent<Inventory>();
             DejaInv = true;
         }
+
 	}
 
     private void Update()
@@ -58,8 +60,18 @@ public class PickUpItem : MonoBehaviour
                         pla.incrementeGoal(v.indexQuete);
 
                     }
+                    Debug.Log("aa)");
+                    // PlayerControllerclem.incrementation(play, play.listeQuete.IndexOf(v));
+                    //  plusplusphil(v);
+                    if (v.qG.goalType.Equals(GoalType.Gathering) || v.qG.goalType.Equals(GoalType.Give))
+                    {
+                        Debug.Log(v.qG.it.ToString());
+                        play.incrementeGoal(play.listeQuete.IndexOf(v));
 
+                    }
                 }
+
+                
             }
             
             Destroy(gameObject);
@@ -75,6 +87,7 @@ public class PickUpItem : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
 
     private void OnTriggerEnter2D(Collider2D other)
     {

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
@@ -13,6 +14,8 @@ public class Enemy : MonoBehaviour
     public float currentHealth;
 
     public movingennemy me;
+    public GameObject RandomDrop;
+    public movingennemy me=new movingennemy();
     private Inventory inventory;
     private GameObject inv;
     private GameObject pickUpText;
@@ -56,19 +59,23 @@ public class Enemy : MonoBehaviour
         int verif = 0;
         for (int i = 0; i < player.listeQuete.Count; i++)
         {
-            if (player.listeQuete[i].qG.Equals(GoalType.Kill)) { 
+            Debug.Log(player.listeQuete[i].qG.goalType.Equals(GoalType.Kill));
+            Debug.Log(player.listeQuete[i].qG.goalType.ToString());
+            if (player.listeQuete[i].qG.goalType.Equals(GoalType.Kill)) { 
             Debug.Log("type de monstre tué :" + this.typeDeMonstre + "type de monstre attendu :" + player.listeQuete[i].qG.mT);
             if (player.listeQuete[i].isActive && player.listeQuete[i].qG.mT.Equals(this.typeDeMonstre))
             {
 
                 Debug.Log((player.listeQuete[i].isActive && player.listeQuete[i].qG.Equals(this.typeDeMonstre)).ToString());
-                player.incrementeGoal(i);
+                player.incrementeGoal( i);
             }
         }
         }
         Destroy(gameObject);
         if(me!=null)
            me.destroy();
+        if (RandomDrop != null)
+        
         if (RandomDrop != null)
         {
 			for (int i = 0; i < numberOfDrop; i++)
@@ -97,6 +104,11 @@ public class Enemy : MonoBehaviour
                 Instantiate(RandomDrop[UnityEngine.Random.Range(0, RandomDrop.Length)], dorp, transform.rotation);
             }
         }
+        try
+        {
+            me.destroy();
+        }
+        catch (Exception e) { }
     }
 
 

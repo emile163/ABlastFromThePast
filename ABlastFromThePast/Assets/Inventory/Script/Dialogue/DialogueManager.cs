@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-	private PlayerControllerclem player;
+	private QuestGiver questGiver;
 	public DialogueHolder dHolder ;
 	public GameObject dBox;
 	public Text instruction;
@@ -16,6 +16,7 @@ public class DialogueManager : MonoBehaviour
 	public bool dialogueActive;
 	public Button questButton;
 
+
 	public bool hasQuest;
 	public QuestObj Quest;
 
@@ -24,7 +25,7 @@ public class DialogueManager : MonoBehaviour
 
 	void Start()
 	{
-
+		questGiver = FindObjectOfType<QuestGiver>();
 
 	}
 
@@ -46,14 +47,14 @@ public class DialogueManager : MonoBehaviour
 			currentLine = 0;
 		}
 		dText.text = dialogueLines[currentLine];
-		if (currentLine == dialogueLines.Length - 1)
+		if (currentLine == dialogueLines.Length - 1 )
 		{
 			instruction.text = "Appuyez sur espace pour finir le dialogue";
 			if (hasQuest )
 			{
 				
 				questButton.gameObject.SetActive(true);
-
+				
 			}
 		}
 		else
@@ -61,15 +62,20 @@ public class DialogueManager : MonoBehaviour
 			instruction.text = "Press space to continue";
 			questButton.gameObject.SetActive(false);
 		}
-		try
+		if (currentLine == dialogueLines.Length - 1 /*&& questGiver.quetes[dHolder.QuestIndex].qG.goalType.Equals(GoalType.Give)*/ && questGiver.quetes[dHolder.QuestIndex].isActive)
 		{
-			if ((player = FindObjectOfType<PlayerControllerclem>()).listeQuete[0].qG.IsReached())
-			{
-				questButton.gameObject.SetActive(true);
+			questButton.gameObject.SetActive(true);
+
+		}
+		//try
+		//{
+		//	if ((player = FindObjectOfType<PlayerControllerclem>()).listeQuete[0].qG.IsReached())
+		//	{
+		//		questButton.gameObject.SetActive(true);
 
 
-			}
-		}catch (ArgumentOutOfRangeException e) { }
+		//	}
+		//}catch (ArgumentOutOfRangeException e) { }
 
 	}
 	public void ShowBox(string dialogue)
@@ -99,6 +105,6 @@ public class DialogueManager : MonoBehaviour
 		this.dialogueActive = false;
 		dHolder.acceptQuest();
 	}
-
+	
 
 }

@@ -127,6 +127,8 @@ public enum itemType
 {
     Bois,
     Ble,
+    Equipement,
     Clément
+    
 
 }
