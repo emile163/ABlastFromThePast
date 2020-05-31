@@ -1223,7 +1223,7 @@ MonoBehaviour:
   maxHealth: 40
   me: {fileID: 624893732}
   RandomDrop:
-  - {fileID: 6504258523190282137, guid: f4a3488963bfc83478c8dbd788fc9ce1, type: 3}
+  - {fileID: 4929234712278625420, guid: 09934753e5b30d94d98961c108294e6c, type: 3}
   numberOfDrop: 1
   bloodanim: {fileID: 1775566723987935927, guid: be5bb79507ea4d94786fbab0a75a62f3,
     type: 3}
