@@ -94,7 +94,8 @@ public class Enemy : MonoBehaviour
                 {
                     dorp = transform.position + new Vector3(-0.3f, -0.3f);
                 }
-
+                 else
+                   dorp = transform.position;
                 Instantiate(RandomDrop[UnityEngine.Random.Range(0, RandomDrop.Length)], dorp, transform.rotation);
             }
         }
@@ -115,6 +116,7 @@ public enum TypeDeMonstre
     Vache,
     Ours,
     Poulet,
+    renard,
     Clement,
     Mémille
         

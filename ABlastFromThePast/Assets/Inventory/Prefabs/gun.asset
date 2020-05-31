@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b806e69b677a1c4ca2b10bd2052528e, type: 3}
-  m_Name: Mortier
+  m_Name: gun
   m_EditorClassIdentifier: 
   iT: 0
-  itemName: Mortier
-  itemDes: "Instrument utilis\xE9 pour m\xE9langer des herbes m\xE9dicinal."
-  itemSprite: {fileID: -391900575097555447, guid: 04654a9413b420e4681fcb3acaba09b9,
-    type: 3}
+  itemName: fusil
+  itemDes: "Un des \xE9l\xE9ments les plus \xE9changer entre Am\xE9rindien et Europ\xE9ens"
+  itemSprite: {fileID: 21300000, guid: dc5d1a1027d63d34485ddcc8b215784e, type: 3}

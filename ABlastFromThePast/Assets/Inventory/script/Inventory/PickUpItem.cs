@@ -50,6 +50,7 @@ public class PickUpItem : MonoBehaviour
             inventory.AddRessourceItem(item);
             if (pla.listeQuete != null)
             {
+               
                 unfois = false;
                 foreach (Queteobjet v in pla.listeQuete)
                 {
@@ -57,7 +58,7 @@ public class PickUpItem : MonoBehaviour
                     {
                         Debug.Log(v.qG.it.ToString());
                         Debug.Log(v.indexQuete.ToString());
-                        pla.incrementeGoal(v.indexQuete);
+                        pla.incrementeGoal(pla.listeQuete.IndexOf(v));
                         unfois = true;
                     }
                 }

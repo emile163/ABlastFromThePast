@@ -15,14 +15,12 @@ public class Target : MonoBehaviour
     {
         questGiver = FindObjectOfType<QuestGiver>();
         pnjDebut = FindObjectOfType<PNJDebut>();
-        pnjFin = GameObject.Find("target test end");
     }
     private void Update()
     {
 
         if (timer)
         {
-            pnjFin.gameObject.SetActive(false);
             timer = false;
         }
         
@@ -37,7 +35,6 @@ public class Target : MonoBehaviour
 
                 cond = true;                
                 pnjDebut.GetComponentInChildren<SpriteRenderer>().gameObject.SetActive(false);
-                pnjFin.gameObject.SetActive(true);
                 
                 dhold.canTalk = false;
                 //questGiver.quetes[quete.indexQuete].questEnded = true;

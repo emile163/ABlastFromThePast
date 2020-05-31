@@ -595,7 +595,7 @@ PrefabInstance:
     - target: {fileID: 3397162699829163510, guid: 327ee5da2747e6a46a6e7cbc18401beb,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3397162699829163511, guid: 327ee5da2747e6a46a6e7cbc18401beb,
         type: 3}
@@ -1019,7 +1019,7 @@ MonoBehaviour:
   maxHealth: 40
   me: {fileID: 624893732}
   RandomDrop:
-  - {fileID: 6504258523190282137, guid: f4a3488963bfc83478c8dbd788fc9ce1, type: 3}
+  - {fileID: 4929234712278625420, guid: 09934753e5b30d94d98961c108294e6c, type: 3}
   numberOfDrop: 1
   bloodanim: {fileID: 1775566723987935927, guid: be5bb79507ea4d94786fbab0a75a62f3,
     type: 3}
@@ -3727,6 +3727,26 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1509945663}
+    - target: {fileID: 3503758991172242990, guid: 9f62eef0802731f429e723171b3918e5,
+        type: 3}
+      propertyPath: quetes.Array.data[0].qG.goalType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3503758991172242990, guid: 9f62eef0802731f429e723171b3918e5,
+        type: 3}
+      propertyPath: quetes.Array.data[0].qG.mT
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3503758991172242990, guid: 9f62eef0802731f429e723171b3918e5,
+        type: 3}
+      propertyPath: quetes.Array.data[0].qG.it
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3503758991172242990, guid: 9f62eef0802731f429e723171b3918e5,
+        type: 3}
+      propertyPath: quetes.Array.data[0].qG.itemName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3503758991566525876, guid: 9f62eef0802731f429e723171b3918e5,
         type: 3}
       propertyPath: m_IsActive
@@ -4099,6 +4119,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3111486165147507345, guid: 77de36d42865f524890333c6182d9f17,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3435517978958099945, guid: 77de36d42865f524890333c6182d9f17,
         type: 3}
       propertyPath: m_Name

@@ -27,4 +27,9 @@ public class SceneChange : MonoBehaviour
 
 		inv.gameObject.SetActive(true);
 	}
+	public void ChangeScenefinal()
+	{
+		SceneManager.LoadScene(sceneBuildIndex: scene);
+	}
+
 }

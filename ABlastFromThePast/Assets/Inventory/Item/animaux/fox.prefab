@@ -179,10 +179,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5344316bbed12a8489f2f89e570512de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  typeDeMonstre: 0
+  typeDeMonstre: 4
   maxHealth: 50
   me: {fileID: 2076165018889430676}
-  RandomDrop: []
+  RandomDrop:
+  - {fileID: 7447195074136036346}
   numberOfDrop: 1
   bloodanim: {fileID: 1775566723987935927, guid: be5bb79507ea4d94786fbab0a75a62f3,
     type: 3}
@@ -200,7 +201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visionRange: 0.8
   attaqueRange: 0.3
-  attaquedmg: 30
+  attaquedmg: 50
   AngrySignPosition: {fileID: 2076165018222196727}
   AngrySign: {fileID: 8213763389243622809, guid: ebdb5bf7915128643bbc1a4f08be8098,
     type: 3}
@@ -235,6 +236,7 @@ Transform:
   - {fileID: 2076165018889430672}
   - {fileID: 2076165019592153699}
   - {fileID: 2076165019944624720}
+  - {fileID: 8383432939700643249}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -297,4 +299,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2076165019380335917}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7447195074136036346
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8383432939700643249}
+  m_Layer: 0
+  m_Name: nada
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8383432939700643249
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7447195074136036346}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.19626236, y: -0.13650513, z: 1.4169235}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2076165019380335917}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

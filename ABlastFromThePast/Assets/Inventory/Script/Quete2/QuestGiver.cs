@@ -315,9 +315,9 @@ public class QuestGiver : MonoBehaviour
                         }
                     }
             break;
-                case 0:
-                    if (inv.GetListItem()[iQ].itemName.Equals(quetes[iQ].qG.itemName))
-            {
+            case 0:
+            if (inv.GetListItem()[iQ].itemName.Equals(quetes[iden].qG.itemName))
+                    {
                 inv.RemoveItem(inv.GetListItem()[iQ]);
                 quetes[iden].questEnded = true;
                 OpenQuestWindow(iden);
@@ -341,7 +341,7 @@ public class QuestGiver : MonoBehaviour
             foreach (Item i in inv.GetListItem())
             {
 
-                if ((quetes[iQ].qG.goalType).Equals(GoalType.Give))
+                if ((quetes[iQ].qG.it).Equals(i.iT))
                 {
                     iQ = inv.GetListItem().IndexOf(i);
                     return iQ;

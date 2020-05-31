@@ -127,6 +127,7 @@ public enum itemType
 {
     Bois,
     Ble,
+    medecinal,
     Equipement,
     Clément
     

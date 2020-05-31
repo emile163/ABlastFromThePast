@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 72bd0dfe15760d24689c2a1bff45059a, type: 3}
-  m_Name: "bl\xE9"
+  m_Name: "Bl\xE9"
   m_EditorClassIdentifier: 
   iT: 1
   itemName: "Bl\xE9"
-  itemDes: "Le bl\xE9 \xE9tait l'aliment le plus cultiver en Nouvelle-France \xE0
-    cause de la popularit\xE9 et la n\xE9c\xE9ssit\xE9 du pain."
+  itemDes: "Le bl\xE9 est l'aliment le plus cultiver en Nouvelle-France principalement
+    parce qu'il produit le pain."
   itemSprite: {fileID: 481891225246098098, guid: ee223091319680444bdd654cbfa5d144,
     type: 3}

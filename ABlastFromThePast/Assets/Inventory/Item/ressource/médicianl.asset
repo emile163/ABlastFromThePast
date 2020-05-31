@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b806e69b677a1c4ca2b10bd2052528e, type: 3}
-  m_Name: astragale
+  m_Script: {fileID: 11500000, guid: 72bd0dfe15760d24689c2a1bff45059a, type: 3}
+  m_Name: "m\xE9dicianl"
   m_EditorClassIdentifier: 
-  iT: 0
-  itemName: Astragale
-  itemDes: "Une plante m\xE9dicinale tr\xE8s importante et reconnue."
-  itemSprite: {fileID: -4499051522057697483, guid: 04654a9413b420e4681fcb3acaba09b9,
+  iT: 2
+  itemName: "Sac \xE0 dos d'object m\xE9dicinal"
+  itemDes: 
+  itemSprite: {fileID: 6039205832973714722, guid: 04654a9413b420e4681fcb3acaba09b9,
     type: 3}
