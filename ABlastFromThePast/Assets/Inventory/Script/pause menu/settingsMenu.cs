@@ -33,6 +33,12 @@ public class settingsMenu : MonoBehaviour
 		settings.SetActive(false);
 		ShowingKeyBinding = true;
 	}
+	public void SowKeyBindingMenuPrinci()
+	{
+		KeyBinding.SetActive(true);
+		settings.SetActive(false);
+		ShowingKeyBinding = true;
+	}
 
 	public void HideKeyBindingMenu()
 	{

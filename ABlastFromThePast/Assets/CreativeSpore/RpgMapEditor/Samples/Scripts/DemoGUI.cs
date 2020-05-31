@@ -163,5 +163,7 @@ namespace CreativeSpore.RpgMapEditor
                 LoadLevel(sLevel);
             }
         }
+
+       
     }
 }

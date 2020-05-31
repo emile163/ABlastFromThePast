@@ -57,7 +57,7 @@ public class PickUpItem : MonoBehaviour
                     {
                         Debug.Log(v.qG.it.ToString());
                         Debug.Log(v.indexQuete.ToString());
-                        pla.incrementeGoal(v.indexQuete);
+                        pla.incrementeGoal(pla.listeQuete.IndexOf(v)) ;
                         unfois = true;
                     }
                 }

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
+
+
 public class QuestGoal 
 {
     public GoalType goalType;
@@ -14,6 +16,11 @@ public class QuestGoal
     private bool completed;
     public string itemName;
 
+    /// <summary>
+    /// fonction qui permet de déterminer si le but de la quête est compléter sauf dans le cas
+    /// d'une quête d'exploration
+    /// </summary>
+    /// <returns></returns> Retourne si la quête est complétée.
     public bool IsReached()
     { 
         if (!completed && !this.goalType.Equals(GoalType.Explore))
@@ -27,19 +34,15 @@ public class QuestGoal
         }
         else return true;
     }
-    public int Atteint(Queteobjet quest )
-    {
-    if (quest.qG.IsReached())
-    {
-        return quest.indexQuete; 
-    }else return -1;
-    }
-   
+
+    
 
 }
 
 
-
+    /// <summary>
+    /// Enum qui permet de déterminer quel est le type de la quete
+    /// </summary>
     public enum GoalType
  
     {

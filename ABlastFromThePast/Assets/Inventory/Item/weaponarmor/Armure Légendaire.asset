@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1852838ef3f7ad14db90172e635458ca, type: 3}
   m_Name: "Armure L\xE9gendaire"
   m_EditorClassIdentifier: 
-  iT: 0
+  iT: 2
   itemName: "Armure L\xE9gendaire"
   itemDes: "Assemblez les cinq pour \xEAtre le nouvel h\xE9ro de la Nouvelle-France"
   itemSprite: {fileID: 21300000, guid: 9e96973dec9e24746a9326f5248ca840, type: 3}

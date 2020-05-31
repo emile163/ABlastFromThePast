@@ -18,8 +18,7 @@ public class DialogueManager : MonoBehaviour
 
 
 	public bool hasQuest;
-	public QuestObj Quest;
-
+	
 	public string[] dialogueLines;
 	public int currentLine;
 
@@ -29,15 +28,16 @@ public class DialogueManager : MonoBehaviour
 
 	}
 
+	/// <summary>
+	/// Gère les dialogues qui sont en cours et leur avancement. 
+	/// Recoit toutes ses infos du questGiver et de son dialogue Holder.
+	/// </summary>
 	void Update()
 	{
 		if (dialogueActive && Input.GetKeyDown(KeyCode.Space))
         {
 
-			//if (hasQuest && !Quest.isActive())
-
-			//	dBox.SetActive(false);
-			//  dialogueActive = false;
+			
 			currentLine++;
 		}
 		if (currentLine >= dialogueLines.Length)
@@ -62,22 +62,19 @@ public class DialogueManager : MonoBehaviour
 			instruction.text = "Press space to continue";
 			questButton.gameObject.SetActive(false);
 		}
-		if (currentLine == dialogueLines.Length - 1 /*&& questGiver.quetes[dHolder.QuestIndex].qG.goalType.Equals(GoalType.Give)*/ && questGiver.quetes[dHolder.QuestIndex].isActive)
+		if (currentLine == dialogueLines.Length - 1  && questGiver.quetes[dHolder.QuestIndex].isActive)
 		{
 			questButton.gameObject.SetActive(true);
 
 		}
-		//try
-		//{
-		//	if ((player = FindObjectOfType<PlayerControllerclem>()).listeQuete[0].qG.IsReached())
-		//	{
-		//		questButton.gameObject.SetActive(true);
-
-
-		//	}
-		//}catch (ArgumentOutOfRangeException e) { }
+		
 
 	}
+
+	/// <summary>
+	/// Affiche la ligne de dialogue qui est en cours
+	/// </summary>
+	/// <param name="dialogue"></param> La ligne de dialogue
 	public void ShowBox(string dialogue)
 	{
 
@@ -92,12 +89,21 @@ public class DialogueManager : MonoBehaviour
 		dBox.SetActive(true);
 		
     }
+
+	/// <summary>
+	/// Affiche la boîte de dialogue si elle n'est pas active.
+	/// </summary>
 	public void ShowDialogue()
     {
 		dialogueActive = true;
 		dBox.SetActive(true);
 		name.text = Name;
     }
+
+	/// <summary>
+	/// Réinitialise et ferme le dialogue manager et ses composantes importantes après qu'une quête soit 
+	/// acceptée.
+	/// </summary>
 	public void setCurrentLine0()
 	{
 		hasQuest = false;
