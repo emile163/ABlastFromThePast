@@ -56,9 +56,7 @@ public class PickUpItem : MonoBehaviour
                 {
                     if (v.isActive && v.qG.it.Equals(item.iT) && unfois == false)
                     {
-                        Debug.Log(v.qG.it.ToString());
-                        Debug.Log(v.indexQuete.ToString());
-                        pla.incrementeGoal(pla.listeQuete.IndexOf(v));
+                        pla.incrementeGoal(pla.listeQuete.IndexOf(v)) ;
                         unfois = true;
                     }
                 }

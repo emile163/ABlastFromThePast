@@ -6,7 +6,6 @@ using UnityEngine;
 public class DialogueHolder : MonoBehaviour
 {
     private QuestGiver questGiver;
- //   private PlayerControllerclem player;
     public bool canTalk = true;
     public bool given1timeQuest;
     public bool hasQuest;
@@ -28,12 +27,13 @@ public class DialogueHolder : MonoBehaviour
 
     {
         questGiver = FindObjectOfType<QuestGiver>();
-       // player = FindObjectOfType<PlayerControllerclem>();
         dMan = FindObjectOfType<DialogueManager>();
     }
 
-    // Update is called once per frame
-    void Update()
+/// <summary>
+/// Regarde si le player rempli les conditions pour parler au dialogue holder.
+/// </summary>
+void Update()
     {
         Edown = Input.GetKeyDown(KeyCode.E);
         checkDistance(questGiver.player);
@@ -49,7 +49,7 @@ public class DialogueHolder : MonoBehaviour
                         dMan.hasQuest = hasQuest;
                         dMan.dHolder = this;
                         dMan.Name = Name;
-                        if (!questGiver.quetes[QuestIndex].questEnded)/////////////////////////////////////POTENTIEL PROBLEME ICI
+                        if (!questGiver.quetes[QuestIndex].questEnded)
                         {
                             dMan.dialogueLines = dialogueLines;
 
@@ -57,7 +57,6 @@ public class DialogueHolder : MonoBehaviour
                         else
                         {
                             dMan.dialogueLines = dialogueFinQuete;
-                            Debug.Log("NUMÉRO DU CHANGEMENT DE DIALOGUE" + QuestIndex);
                         }
                         dMan.currentLine = 0;
                         dMan.ShowDialogue();
@@ -77,6 +76,13 @@ public class DialogueHolder : MonoBehaviour
             }
         }
     }
+    
+    /// <summary>
+    /// Fonction qui se déclenche seulement dans le cas de deux collider2d qui se superposent.
+    /// Cette fonction sert de backup dans le cas où la fonction dans l'update ne fonctionne pas.
+    /// Elle permet de déclencher le dialogue du dialogue holder dans le dialogue manager
+    /// </summary>
+    /// <param name="other"></param> Le collider qui est entré en contact avec le collider 2d du dialogue holder.
     void OnTriggerStay2D(Collider2D other)
         {
 
@@ -93,11 +99,9 @@ public class DialogueHolder : MonoBehaviour
                 else SpaceUp = true;
             }
 
-            //    if (other.gameObject.name == "Player")//|| other.gameObject.name == "DontDestroyOnLoad")
             {
                 if (Edown && canTalk)
                 {
-                    // dMan.ShowBox(dialogue);
                     if (!dMan.dialogueActive)
                     {
                         if (!oneTimeQuest)
@@ -107,7 +111,7 @@ public class DialogueHolder : MonoBehaviour
                         dMan.hasQuest = hasQuest;
                         dMan.dHolder = this;
                         dMan.Name = Name;
-                        if (!questGiver.quetes[QuestIndex].questEnded)/////////////////////////////////////POTENTIEL PROBLEME ICI
+                        if (!questGiver.quetes[QuestIndex].questEnded)
                         {
                             dMan.dialogueLines = dialogueLines;
 
@@ -115,21 +119,7 @@ public class DialogueHolder : MonoBehaviour
                         else
                         {
                             dMan.dialogueLines = dialogueFinQuete;
-                            Debug.Log("NUMÉRO DU CHANGEMENT DE DIALOGUE" + QuestIndex);
-                        } //if (hasQuest)
-                          //  {
-                          //      try
-                          //      {
-                          //          if (questGiver.player.listeQuete[QuestIndex].qG.IsReached())
-                          //          {
-                          //              setDialFinDeQuete();
-                          //          }
-                          //      }
-                          //      catch (ArgumentOutOfRangeException e)
-                          //      {
-
-                        //      }
-                        //  }
+                        }
 
                         dMan.currentLine = 0;
                         dMan.ShowDialogue();
@@ -141,31 +131,36 @@ public class DialogueHolder : MonoBehaviour
                         }
 
                     }
-                    // Il faut ensuite ici rendre le pnj incapable de bouger tout comme le joueur
 
                 }
             }
         }
     
+    /// <summary>
+    /// Change l'état du dialogue holder dans le cas où une quete est acceptée.
+    /// i.e. : le joueur ne peu pas accepter deux fois la même quete.
+    /// </summary>
     public void acceptQuest()
     {
         hasQuest = false;
         oneTimeQuest = true;
        
     }
+
+    /// <summary>
+    /// Change les lignes de dialogues du pnj apres que la quete soit finie
+    /// </summary>
     public void setDialFinDeQuete()
     {
         dialogueLines = dialogueFinQuete;
-        Debug.Log("Qui a set le dialfinal"+this.QuestIndex);
     }
-    public string sout(DialogueHolder [] dhold)
-    {
-        string truc="";
-        foreach (DialogueHolder i in dhold)
-       truc= truc+ i.QuestIndex.ToString();
-        return truc;
-    }
-
+    
+    /// <summary>
+    /// Calcule la distance entre le dialogue holder et le player pour déterminer s'il est dans la zone
+    /// pour déclencher le dialogue.
+    /// </summary>
+    /// <param name="player"></param> Le joueur
+    /// <returns></returns> Retourne si le joueur est dans la zone.
     private bool checkDistance(PlayerControllerclem player)
     {
         if ((player.transform.position - transform.position).magnitude < .5f)

@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1852838ef3f7ad14db90172e635458ca, type: 3}
   m_Name: "L'\xE9p\xE9e pirate"
   m_EditorClassIdentifier: 
+  iT: 2
   itemName: "L'\xE9p\xE9e Pirate"
   itemDes: 
   itemSprite: {fileID: 1340780718279806382, guid: 04654a9413b420e4681fcb3acaba09b9,
     type: 3}
-  nomStat: Attaque
+  NomStat: 0
   stat: 33
   EquipmentType: 4
