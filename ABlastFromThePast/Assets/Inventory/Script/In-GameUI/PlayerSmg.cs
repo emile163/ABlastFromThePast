@@ -22,7 +22,7 @@ public class PlayerSmg : MonoBehaviour
 
     private GameObject ArmureBar;
 
-    private GameObject GameOverPanel;
+    public GameObject GameOverPanel;
 
     private float extraHealing = 0;
 
@@ -36,21 +36,34 @@ public class PlayerSmg : MonoBehaviour
 
     public PlayerCombat combat;
 
+    private static bool once = true;
+
+    public GameObject bug;
+
     void Start()
     {
-        GameOverPanel = GameObject.Find("GameOverUI");
         ArmureBar = GameObject.Find("fillArmure");
         ab = ArmureBar.GetComponent<armurebar>();
         Healthbar = GameObject.Find("fillhealth");
         hb = Healthbar.GetComponent<HealthBar>();
-        hb.SetMaxHealth(MaxHealth, currentHealth);
-        ab.SetMaxArmure(armureMax, currentArmure);
+        if(once == true)
+		{
+            hb.SetMaxHealth(MaxHealth, currentHealth);
+            ab.SetMaxArmure(armureMax, currentArmure);
+            once = false;
+        }
+       
 
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if (Input.GetKeyDown(KeyCode.P) && bug != null)
+		{
+            bug.SetActive(false);
+		}
         if (Input.GetKeyDown(KeyCode.B))
         {
             blocking = true;
@@ -64,15 +77,6 @@ public class PlayerSmg : MonoBehaviour
             combat.Isblockking(false);
         }
 
-        if (Input.GetKeyDown(KeyCode.T))
-		{
-            takedmg(79f);
-		}
-
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            Heal(30f);
-        }
 
         if (currentArmure < 0)
 		{
@@ -116,9 +120,9 @@ public class PlayerSmg : MonoBehaviour
     public void AjouterArmure(float _armure)
 	{
         tempArmure = armureMax - currentArmure;
+        currentArmure = _armure - tempArmure;
         armureMax = _armure;
-        currentArmure = armureMax - tempArmure;
-        ab.SetMaxArmure(armureMax, currentArmure);
+        ab.SetMaxArmure(_armure, currentArmure);
     }
 
     public void EnleverArmure(float _armure)

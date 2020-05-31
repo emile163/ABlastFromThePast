@@ -175,8 +175,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 50
+    m_Font: {fileID: 12800000, guid: 58b647c5b2ec4184e9a07a561cdf0644, type: 3}
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -187,7 +187,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "En esp\xE9rant ne pas vous avoir \nfait mal avec ce coup dans le pass\xE9\n"
+  m_Text: "En esp\xE9rant que vous avez appr\xE9cier votre \ntravers\xE9 dans le
+    pass\xE9."
 --- !u!1 &6133930608926638565
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,7 +223,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 171}
+  m_AnchoredPosition: {x: 0, y: 316}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6133930608926638560
@@ -252,21 +253,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 200
+    m_Font: {fileID: 12800000, guid: 58b647c5b2ec4184e9a07a561cdf0644, type: 3}
+    m_FontSize: 250
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 200
+    m_MaxSize: 250
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Game Over
-
-'
+  m_Text: GAME OVER
 --- !u!1 &6133930608976113751
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,7 +383,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6133930608976113746}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4145776200108212346}
+        m_MethodName: ChangeScenefinal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6133930609215973432
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,13 +407,14 @@ GameObject:
   - component: {fileID: 6133930609215973435}
   - component: {fileID: 6133930609215973434}
   - component: {fileID: 6133930609215973433}
+  - component: {fileID: 4145776200108212346}
   m_Layer: 5
   m_Name: GameOverUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6133930609215973412
 RectTransform:
   m_ObjectHideFlags: 0
@@ -485,6 +496,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &4145776200108212346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6133930609215973432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d8de0056ae9b41439def7ed04feee45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene: 0
 --- !u!1 &6133930609576847037
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,7 +573,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 58b647c5b2ec4184e9a07a561cdf0644, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0

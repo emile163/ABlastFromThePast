@@ -18,5 +18,5 @@ MonoBehaviour:
   itemSprite: {fileID: 1340780718279806382, guid: 04654a9413b420e4681fcb3acaba09b9,
     type: 3}
   NomStat: 0
-  stat: 5
+  stat: 10
   EquipmentType: 4

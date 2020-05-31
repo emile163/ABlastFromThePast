@@ -42,7 +42,15 @@ public class InventoryManager : MonoBehaviour
         if(item is EquipableItem)
         {
             Equip((EquipableItem)item);
-            checkStat();
+            AttaquePersonnageEnPlus = 10 + equipmentPanel.Nombreattaque();
+            AttackDisplay.text = AttaquePersonnageEnPlus.ToString();
+            mmplayer.SetAttaque(AttaquePersonnageEnPlus);
+            speed = equipmentPanel.nombreDeSpeed();
+            pcm.SetSpeed(speed);
+
+            DefencPersonnage = equipmentPanel.NombreDefence();
+            DeffenceDisplay.text = DefencPersonnage.ToString();
+            player.AjouterArmure(DefencPersonnage);
         }
     }
     private void UnequipFromEquipmentPanel(Item item)

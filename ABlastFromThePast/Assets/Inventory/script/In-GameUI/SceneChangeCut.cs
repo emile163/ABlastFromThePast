@@ -5,18 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class SceneChangeCut : MonoBehaviour
 {
-	private GameObject inv;
+	private static GameObject inv;
+	static bool unefois = true;
 
 	void Start()
 	{
-		inv = GameObject.Find("Inventaire");
+		if(unefois == true)
+		{
+			inv = GameObject.Find("Inventaire");
+			unefois = false;
+		}
 	}
-
 
 	void OnEnable()
 	{
-		SceneManager.LoadScene(sceneBuildIndex: 2);
+		SceneManager.LoadScene(sceneBuildIndex: 3);
 
-		inv.gameObject.SetActive(true);
+		//inv.gameObject.SetActive(true);
 	}
 }

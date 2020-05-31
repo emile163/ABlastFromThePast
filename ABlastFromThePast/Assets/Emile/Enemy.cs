@@ -14,13 +14,14 @@ public class Enemy : MonoBehaviour
     private float currentHealth;
 
     public movingennemy me=new movingennemy();
-    private Inventory inventory;
-    private GameObject inv;
+    private static Inventory inventory;
+    private  GameObject inv;
     private GameObject pickUpText;
     private GameObject FullInventoryText;
     public GameObject[] RandomDrop;
     public int numberOfDrop = 1;
     private Vector3 dorp;
+    static bool unefois = true;
 
     /// <summary>
     /// /////////////////// public MonsterType mT;
@@ -31,13 +32,16 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
-        
+		if (unefois)
+		{
+            inv = GameObject.Find("Inventory");
+            inventory = inv.GetComponent<Inventory>();
+            unefois = false;
+        }
         player = FindObjectOfType<PlayerControllerclem>();
-
         currentHealth = maxHealth;
 
-        inv = GameObject.Find("Inventory");
-        inventory = inv.GetComponent<Inventory>();
+        
 
     }
     public void TakeDamage(float damage)
@@ -47,7 +51,6 @@ public class Enemy : MonoBehaviour
             Instantiate(bloodanim, transform.position, transform.rotation);
 
         if (currentHealth <= 0) {
-            inv.SetActive(true);
             Die();
         }
     

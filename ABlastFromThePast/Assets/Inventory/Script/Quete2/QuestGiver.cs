@@ -14,7 +14,7 @@ public class QuestGiver : MonoBehaviour
 {
     public DialogueHolder[] dhold;
     public int[] dholdNumber = new int[7];
-    private Inventory inv;
+    private static Inventory inv;
     public Queteobjet quete;
     public PlayerControllerclem player;
     public GameObject questWindow;
@@ -25,7 +25,7 @@ public class QuestGiver : MonoBehaviour
     public List<Queteobjet> quetes;
     public Button acepterQuete;
     public Button giveThings;
-    private List<Item> itemSlots;
+    static bool unefois = true;
    
     /**/
     /// <summary>
@@ -33,9 +33,13 @@ public class QuestGiver : MonoBehaviour
     /// </summary>
     private void Start()
     {
+        if(unefois == true)
+		{
+            inv = FindObjectOfType<Inventory>();
+            unefois = false;
+        }
         dhold = FindObjectsOfType<DialogueHolder>();
-        inv = FindObjectOfType<Inventory>();
-        itemSlots = inv.GetListItem();
+        
     }
    
   /// <summary>
@@ -186,7 +190,7 @@ public class QuestGiver : MonoBehaviour
 
         if (quete.desactiveObjet != null)
         {
-            quete.desactiveObjet.SetActive(false); /////////////////////////ici CLEMENT
+            quete.active.SetActive(!quete.active.activeSelf); /////////////////////////ici CLEMENT
 
         }
 
@@ -206,9 +210,9 @@ public class QuestGiver : MonoBehaviour
         quete.isActive = false;
         player.listeQuete.Remove(quete);
 
-        if (quete.active != null)
+        if (quete.active != null && quete.desactiveObjet != null)
         {
-            quete.desactiveObjet.SetActive(true);
+            quete.desactiveObjet.SetActive(!quete.desactiveObjet.activeSelf);
 
         }
     }

@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class UIManagerInventory : MonoBehaviour
 {
-    private GameObject inv;
+    private static GameObject inv;
 
     private int timer = 1;
 
+    static bool unefois = true;
+
     private void Start()
     {
-        inv = GameObject.Find("Inventaire");
+        if(unefois == true)
+		{
+            inv = GameObject.Find("Inventaire");
+            unefois = false;
+        }
+        
         inv.gameObject.SetActive(true);
     }
     

@@ -59,7 +59,6 @@ public class EquipmentPanel : MonoBehaviour
             if (equipmentSlots[i].Item == item)
             {
                 equipmentSlots[i].Item = null;
-                inventory.checkStat();
                 return true;
             }
         }
